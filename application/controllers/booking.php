@@ -60,10 +60,25 @@ class Booking extends CI_Controller
         if ($this->input->post('submit'))
         {
             // $this->form_validation->set_rules('mobile','mobile', 'required|trim');
-            // $this->form_validation->set_rules('mobile','mobile', 'required|trim');
-            // $this->form_validation->set_rules('mobile','mobile', 'required|trim');
-            // $this->form_validation->set_rules('mobile','mobile', 'required|trim');
-            // $this->form_validation->set_rules('mobile','mobile', 'required|trim');
+            // $this->form_validation->set_rules('customer_name','name', 'required|trim');
+            // $this->form_validation->set_rules('country_id','country', 'required|trim');
+            // $this->form_validation->set_rules('state_id','state', 'required|trim');
+            // $this->form_validation->set_rules('city','city', 'required|trim');
+
+            // $this->form_validation->set_rules('building_id','building', 'required|trim');
+            // $this->form_validation->set_rules('floor_id','floor', 'required|trim');
+            // $this->form_validation->set_rules('room_type_id','room type', 'required|trim');
+            // $this->form_validation->set_rules('room_id','room', 'required|trim');
+
+            // $this->form_validation->set_rules('members','members', 'required|trim');
+            // $this->form_validation->set_rules('check_in','check in', 'required|trim');
+            // $this->form_validation->set_rules('stay_period','stay period', 'required|trim');
+            // $this->form_validation->set_rules('pay_status','Room pay status', 'required|trim');
+
+            // $this->form_validation->set_rules('charge','room charge', 'required|trim');
+            // $this->form_validation->set_rules('deposite','room deposite', 'required|trim');
+            // $this->form_validation->set_rules('total_payment','total payment', 'required|trim');
+            // $this->form_validation->set_rules('payment_mode','payment mode', 'required|trim');
       
             // if($this->form_validation->run() == FALSE){
             //     $this->addnew($_POST['mode'],$_POST['eid']);
