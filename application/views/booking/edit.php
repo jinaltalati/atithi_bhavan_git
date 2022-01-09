@@ -51,11 +51,37 @@
                            
                         </div>
                         <div class="row-fluid">
-                            <div class="span12">
+                            <div class="span4">
                                  <div class="control-group">
-                                    <label for="address" class="control-label">Address<span class="danger">*</span></label>
+                                    <label for="address" class="control-label">Country<span class="danger">*</span></label>
                                     <!-- <div class="controls"> -->
-                                        <textarea name="data[address]" id="address" class='form-control'  data-rule-required="true" placeholder="Address"><?php echo $arrData->address; ?></textarea>
+                                        
+                                         <select name="data[country_id]" id="country_id" class='form-control'  data-rule-required="true" placeholder="Country" required="required">
+                                         <!-- <option value="">Select</option> -->
+                                            <?php foreach ($countryData as $key => $value) { ?>
+                                                <?php if($value->id==$arrData->country_id){ $sel="selected"; }else{ $sel="";}?>
+                                                <option <?php echo $sel; ?> value="<?= $value->id; ?>"><?= $value->name; ?></option>
+                                            <?php } ?>
+                                        </select>
+                                    <!-- </div> -->
+                                </div> 
+                            </div>
+                            <div class="span4">
+                                 <div class="control-group">
+                                    <label for="state" class="control-label">State<span class="danger">*</span></label>
+                                    <input type="hidden" id="hidden_state_id" value="<?php echo $arrData->state_id; ?>">
+                                    <select id="state_id" name="data[state_id]" class="form-control txtselect" data-rule-required="true">
+                                        <option value="">---Select---</option>
+                                    </select>
+                                    
+                                </div> 
+                            </div>
+                            <div class="span4">
+                                 <div class="control-group">
+                                    <label for="address" class="control-label">City<span class="danger">*</span></label>
+                                    <!-- <div class="controls"> -->
+                                        <input type="text" name="data[city]" id="city" class='form-control'  data-rule-required="true" placeholder="City" value="<?php echo $arrData->city;?>">
+                                         
                                     <!-- </div> -->
                                 </div> 
                             </div>
@@ -457,6 +483,28 @@ $('.datepicker').datepicker({
 
 <script type="text/javascript">
 $(document).ready(function(){ 
+
+    //on load get state
+    var eid = $('#country_id').val();
+    var stateid=$('#hidden_state_id').val();
+    var url='<?php echo base_url(). $this->router->class; ?>/getStateByCountryIdEdit/'+eid+'/'+stateid;
+    alert(stateid);
+    $.ajax({url:url,
+    success:function(result){   
+      $("#state_id").html(result);
+    }});
+    //end on load get state
+    //get state on change
+    $(document).on('change', '#country_id', function () {
+        var eid = $('#country_id').val();
+        var stateid=$('#hidden_state_id').val();
+        var url='<?php echo base_url(). $this->router->class; ?>/getStateByCountryIdEdit/'+eid+'/'+stateid;
+        $.ajax({url:url,
+        success:function(result){   
+          $("#state_id").html(result);
+        }});
+    }); 
+    //end on change country get state  
 
   $("#donate_deposite").change(function(){
     

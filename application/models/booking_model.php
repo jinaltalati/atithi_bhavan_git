@@ -28,7 +28,11 @@ class Booking_model extends CI_Model
             $arrUser['mobile'] = $data['mobile'];
             $arrUser['address'] = $data['address'];
             $arrUser['id_proof'] = $data['id_proof'];
+            $arrUser['country_id'] = $data['country_id'];
+            $arrUser['state_id'] = $data['state_id'];
+            $arrUser['city'] = $data['city'];
             $arrUser['created'] = date('Y-m-d H:i:s');
+            //$arrUser['modified'] = date('Y-m-d H:i:s');
             $this->db->insert('beneficiaries', $arrUser);
 
             $data['beneficiary_id'] = $this->db->insert_id();
@@ -43,8 +47,11 @@ class Booking_model extends CI_Model
                 $arrUser['mobile'] = $data['mobile'];
                 $arrUser['address'] = $data['address'];
                 $arrUser['id_proof'] = $data['id_proof'];
+                $arrUser['country_id'] = $data['country_id'];
+                $arrUser['state_id'] = $data['state_id'];
+                $arrUser['city'] = $data['city'];
                 $arrUser['created'] = date('Y-m-d H:i:s');
-
+                //$arrUser['modified'] = date('Y-m-d H:i:s');
                 $this->db->where('mobile', $data['mobile']);
                 $this->db->update('beneficiaries', $arrUser);
         }
@@ -248,6 +255,38 @@ class Booking_model extends CI_Model
         
         $query=$this->db->get("room_type");
         $data = $query->result_array();
+        return $data;
+    }
+
+     function getlistCountry()
+    {
+        $this->db->from("country_master");
+        $this->db->order_by("id", "ASC");
+        $query = $this->db->get();
+        $data = array();
+        if ($query->num_rows() > 0)
+        {
+            foreach ($query->result() as $rows)
+            {
+                $data[] = $rows;
+            }
+        }
+        return $data;
+    }
+    function getStateListByCountryId($CountryId="")
+    {
+        $this->db->from("state_master");
+        $this->db->where("country_id", $CountryId);
+        $this->db->order_by("id", "ASC");
+        $query = $this->db->get();
+        $data = array();
+        if ($query->num_rows() > 0)
+        {
+            foreach ($query->result() as $rows)
+            {
+                $data[] = $rows;
+            }
+        }
         return $data;
     }
 }

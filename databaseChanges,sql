@@ -35,3 +35,20 @@ ALTER TABLE `beneficiaries`
 
   ALTER TABLE `room`
   CHANGE COLUMN `status` `status` ENUM('Available','In Cleaning','Booked','Time Up','Maintainance') NOT NULL DEFAULT 'Available' COLLATE 'latin1_swedish_ci' AFTER `deposite`;
+
+ -------09-01-2022---minesh----
+ ALTER TABLE `booking` CHANGE `address` `address` TEXT CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL;
+
+ ALTER TABLE `booking`  ADD `country_id` INT NULL DEFAULT NULL  AFTER `customer_name`,  ADD `state_id` INT NULL DEFAULT NULL  AFTER `country_id`,  ADD `city` VARCHAR(100) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL  AFTER `state_id`;
+
+ ALTER TABLE `beneficiaries` CHANGE `address` `address` VARCHAR(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL;
+
+
+ ALTER TABLE `beneficiaries`  ADD `country_id` INT NULL DEFAULT NULL  AFTER `email`,  ADD `state_id` INT NULL DEFAULT NULL  AFTER `country_id`,  ADD `city` VARCHAR(100) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL  AFTER `state_id`;
+
+ ALTER TABLE `booking` CHANGE `check_out` `check_out` DATETIME NULL DEFAULT NULL;
+
+ ALTER TABLE `booking` CHANGE `modified` `modified` DATETIME NULL DEFAULT NULL;
+
+ ALTER TABLE `beneficiaries` CHANGE `last_booking` `last_booking` DATETIME NULL DEFAULT NULL;
+  

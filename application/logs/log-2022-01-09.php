@@ -298,3 +298,342 @@ ERROR - 2022-01-09 10:02:44 --> Query error: Not unique table/alias: 'building'
 ERROR - 2022-01-09 10:06:01 --> Severity: Notice  --> Undefined property: stdClass::$room_name C:\xampp\htdocs\atithi_bhavan_git\application\views\reprint_receipt\list.php 65
 ERROR - 2022-01-09 10:06:01 --> Severity: Notice  --> Undefined property: stdClass::$room_name C:\xampp\htdocs\atithi_bhavan_git\application\views\reprint_receipt\list.php 65
 ERROR - 2022-01-09 10:06:01 --> Severity: Notice  --> Undefined property: stdClass::$room_name C:\xampp\htdocs\atithi_bhavan_git\application\views\reprint_receipt\list.php 65
+ERROR - 2022-01-09 11:26:02 --> Severity: Notice  --> Undefined variable: floor_data E:\wamp64\www\atithi_bhavan_git\application\views\booking\list.php 61
+ERROR - 2022-01-09 11:26:02 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\wamp64\www\atithi_bhavan_git\application\views\booking\list.php 61
+ERROR - 2022-01-09 11:26:02 --> Severity: Notice  --> Undefined property: stdClass::$room_type E:\wamp64\www\atithi_bhavan_git\application\views\booking\list.php 70
+ERROR - 2022-01-09 11:29:24 --> Severity: Notice  --> Undefined variable: floor_data E:\wamp64\www\atithi_bhavan_git\application\views\booking\list.php 61
+ERROR - 2022-01-09 11:29:24 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\wamp64\www\atithi_bhavan_git\application\views\booking\list.php 61
+ERROR - 2022-01-09 11:29:24 --> Severity: Notice  --> Undefined property: stdClass::$room_type E:\wamp64\www\atithi_bhavan_git\application\views\booking\list.php 70
+ERROR - 2022-01-09 11:29:35 --> Severity: Notice  --> Undefined property: Booking::$ObjM E:\wamp64\www\atithi_bhavan_git\application\controllers\booking.php 41
+ERROR - 2022-01-09 11:36:42 --> Severity: Notice  --> Undefined index: address E:\wamp64\www\atithi_bhavan_git\application\models\booking_model.php 29
+ERROR - 2022-01-09 11:36:42 --> Query error: Unknown column 'id_proof' in 'field list'
+ERROR - 2022-01-09 12:20:04 --> Severity: Notice  --> Undefined property: stdClass::$room_type E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 345
+ERROR - 2022-01-09 12:20:04 --> Severity: Notice  --> Undefined property: stdClass::$room_type E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 346
+ERROR - 2022-01-09 12:22:07 --> Severity: Notice  --> Undefined property: stdClass::$room_type E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 369
+ERROR - 2022-01-09 12:22:07 --> Severity: Notice  --> Undefined property: stdClass::$room_type E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 370
+ERROR - 2022-01-09 12:25:14 --> Severity: Notice  --> Undefined property: stdClass::$room_type E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 369
+ERROR - 2022-01-09 12:25:14 --> Severity: Notice  --> Undefined property: stdClass::$room_type E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 370
+ERROR - 2022-01-09 12:25:50 --> Severity: Notice  --> Undefined property: stdClass::$room_type E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 369
+ERROR - 2022-01-09 12:25:50 --> Severity: Notice  --> Undefined property: stdClass::$room_type E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 370
+ERROR - 2022-01-09 12:25:53 --> Severity: Notice  --> Undefined property: stdClass::$room_type E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 369
+ERROR - 2022-01-09 12:25:53 --> Severity: Notice  --> Undefined property: stdClass::$room_type E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 370
+ERROR - 2022-01-09 12:29:14 --> Severity: Notice  --> Undefined index: address E:\wamp64\www\atithi_bhavan_git\application\models\booking_model.php 47
+ERROR - 2022-01-09 12:29:14 --> Severity: Notice  --> Undefined index: state_id E:\wamp64\www\atithi_bhavan_git\application\models\booking_model.php 50
+ERROR - 2022-01-09 12:29:14 --> Query error: Unknown column 'id_proof' in 'field list'
+ERROR - 2022-01-09 12:30:02 --> Severity: Notice  --> Undefined index: address E:\wamp64\www\atithi_bhavan_git\application\models\booking_model.php 47
+ERROR - 2022-01-09 12:30:02 --> Severity: Notice  --> Undefined index: state_id E:\wamp64\www\atithi_bhavan_git\application\models\booking_model.php 50
+ERROR - 2022-01-09 12:30:02 --> Query error: Unknown column 'country_id' in 'field list'
+ERROR - 2022-01-09 12:31:30 --> Severity: Notice  --> Undefined index: address E:\wamp64\www\atithi_bhavan_git\application\models\booking_model.php 47
+ERROR - 2022-01-09 12:31:30 --> Severity: Notice  --> Undefined index: state_id E:\wamp64\www\atithi_bhavan_git\application\models\booking_model.php 50
+ERROR - 2022-01-09 12:31:30 --> Query error: Column 'address' cannot be null
+ERROR - 2022-01-09 12:31:50 --> Severity: Notice  --> Undefined index: address E:\wamp64\www\atithi_bhavan_git\application\models\booking_model.php 47
+ERROR - 2022-01-09 12:31:50 --> Severity: Notice  --> Undefined index: state_id E:\wamp64\www\atithi_bhavan_git\application\models\booking_model.php 50
+ERROR - 2022-01-09 12:31:50 --> Query error: Field 'check_out' doesn't have a default value
+ERROR - 2022-01-09 12:33:37 --> Severity: Notice  --> Undefined index: address E:\wamp64\www\atithi_bhavan_git\application\models\booking_model.php 47
+ERROR - 2022-01-09 12:33:37 --> Severity: Notice  --> Undefined index: state_id E:\wamp64\www\atithi_bhavan_git\application\models\booking_model.php 50
+ERROR - 2022-01-09 12:33:37 --> Query error: Field 'check_out' doesn't have a default value
+ERROR - 2022-01-09 12:34:22 --> Severity: Notice  --> Undefined index: address E:\wamp64\www\atithi_bhavan_git\application\models\booking_model.php 47
+ERROR - 2022-01-09 12:34:22 --> Severity: Notice  --> Undefined index: state_id E:\wamp64\www\atithi_bhavan_git\application\models\booking_model.php 50
+ERROR - 2022-01-09 12:34:22 --> Query error: Field 'modified' doesn't have a default value
+ERROR - 2022-01-09 12:35:33 --> Severity: Notice  --> Undefined index: address E:\wamp64\www\atithi_bhavan_git\application\models\booking_model.php 48
+ERROR - 2022-01-09 12:35:33 --> Severity: Notice  --> Undefined index: state_id E:\wamp64\www\atithi_bhavan_git\application\models\booking_model.php 51
+ERROR - 2022-01-09 12:35:33 --> Query error: Unknown column 'modified' in 'field list'
+ERROR - 2022-01-09 12:35:54 --> Severity: Notice  --> Undefined index: address E:\wamp64\www\atithi_bhavan_git\application\models\booking_model.php 48
+ERROR - 2022-01-09 12:35:54 --> Severity: Notice  --> Undefined index: state_id E:\wamp64\www\atithi_bhavan_git\application\models\booking_model.php 51
+ERROR - 2022-01-09 12:35:54 --> Query error: Field 'modified' doesn't have a default value
+ERROR - 2022-01-09 12:36:51 --> Severity: Notice  --> Undefined index: address E:\wamp64\www\atithi_bhavan_git\application\models\booking_model.php 48
+ERROR - 2022-01-09 12:36:51 --> Severity: Notice  --> Undefined index: state_id E:\wamp64\www\atithi_bhavan_git\application\models\booking_model.php 51
+ERROR - 2022-01-09 12:36:56 --> Severity: Notice  --> Undefined property: stdClass::$room_type E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 370
+ERROR - 2022-01-09 12:36:56 --> Severity: Notice  --> Undefined property: stdClass::$room_type E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 371
+ERROR - 2022-01-09 12:37:19 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:19 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:19 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:19 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:19 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:19 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:19 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:19 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:19 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:19 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:19 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:19 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:19 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:19 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:19 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:19 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:19 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:19 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:19 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:19 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:19 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:19 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:19 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:19 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:19 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:19 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:19 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:19 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:19 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:19 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:19 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:19 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:19 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:19 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:19 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:19 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:19 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:19 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:19 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:19 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:19 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:19 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:19 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:19 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:19 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:20 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:21 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:22 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:22 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:22 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:22 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:22 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:22 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:22 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:22 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:22 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:22 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:22 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:22 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:22 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:22 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:22 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:22 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:22 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:22 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:22 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:22 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:22 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:22 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:22 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:22 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:22 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:22 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:22 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:22 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:22 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:22 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:22 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:22 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:22 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:22 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:22 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:22 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:22 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:22 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:22 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:22 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:22 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:22 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:22 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:22 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:22 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:22 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:22 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:22 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:22 --> Severity: 4096  --> Object of class stdClass could not be converted to string E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 63
+ERROR - 2022-01-09 12:37:22 --> Severity: Notice  --> Undefined property: stdClass::$room_type E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 370
+ERROR - 2022-01-09 12:37:22 --> Severity: Notice  --> Undefined property: stdClass::$room_type E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 371
+ERROR - 2022-01-09 12:37:59 --> Severity: Notice  --> Undefined property: stdClass::$room_type E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 370
+ERROR - 2022-01-09 12:37:59 --> Severity: Notice  --> Undefined property: stdClass::$room_type E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 371
+ERROR - 2022-01-09 12:38:23 --> Severity: Notice  --> Undefined property: stdClass::$room_type E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 370
+ERROR - 2022-01-09 12:38:23 --> Severity: Notice  --> Undefined property: stdClass::$room_type E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 371
+ERROR - 2022-01-09 12:38:44 --> Severity: Notice  --> Undefined property: stdClass::$room_type E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 370
+ERROR - 2022-01-09 12:38:44 --> Severity: Notice  --> Undefined property: stdClass::$room_type E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 371
+ERROR - 2022-01-09 12:40:15 --> Severity: Notice  --> Undefined property: stdClass::$room_type E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 370
+ERROR - 2022-01-09 12:40:15 --> Severity: Notice  --> Undefined property: stdClass::$room_type E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 371
+ERROR - 2022-01-09 12:40:41 --> Severity: Notice  --> Undefined property: stdClass::$room_type E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 370
+ERROR - 2022-01-09 12:40:41 --> Severity: Notice  --> Undefined property: stdClass::$room_type E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 371
+ERROR - 2022-01-09 12:45:52 --> Severity: Notice  --> Undefined property: stdClass::$room_type E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 371
+ERROR - 2022-01-09 12:45:52 --> Severity: Notice  --> Undefined property: stdClass::$room_type E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 372
+ERROR - 2022-01-09 12:46:24 --> Severity: Notice  --> Undefined property: stdClass::$room_type E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 371
+ERROR - 2022-01-09 12:46:24 --> Severity: Notice  --> Undefined property: stdClass::$room_type E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 372
+ERROR - 2022-01-09 12:46:53 --> Severity: Notice  --> Undefined property: stdClass::$room_type E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 371
+ERROR - 2022-01-09 12:46:53 --> Severity: Notice  --> Undefined property: stdClass::$room_type E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 372
+ERROR - 2022-01-09 12:48:17 --> Severity: Notice  --> Undefined property: stdClass::$room_type E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 371
+ERROR - 2022-01-09 12:48:17 --> Severity: Notice  --> Undefined property: stdClass::$room_type E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 372
+ERROR - 2022-01-09 12:50:10 --> Severity: Notice  --> Undefined property: stdClass::$room_type E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 371
+ERROR - 2022-01-09 12:50:10 --> Severity: Notice  --> Undefined property: stdClass::$room_type E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 372
+ERROR - 2022-01-09 12:50:47 --> Severity: Notice  --> Undefined index: address E:\wamp64\www\atithi_bhavan_git\application\models\booking_model.php 29
+ERROR - 2022-01-09 12:50:48 --> Severity: Notice  --> Undefined index: state_id E:\wamp64\www\atithi_bhavan_git\application\models\booking_model.php 32
+ERROR - 2022-01-09 12:50:48 --> Query error: Unknown column 'modified' in 'field list'
+ERROR - 2022-01-09 12:51:06 --> Severity: Notice  --> Undefined index: address E:\wamp64\www\atithi_bhavan_git\application\models\booking_model.php 29
+ERROR - 2022-01-09 12:51:06 --> Severity: Notice  --> Undefined index: state_id E:\wamp64\www\atithi_bhavan_git\application\models\booking_model.php 32
+ERROR - 2022-01-09 12:51:06 --> Query error: Field 'last_booking' doesn't have a default value
+ERROR - 2022-01-09 12:51:45 --> Severity: Notice  --> Undefined index: address E:\wamp64\www\atithi_bhavan_git\application\models\booking_model.php 29
+ERROR - 2022-01-09 12:51:45 --> Severity: Notice  --> Undefined index: state_id E:\wamp64\www\atithi_bhavan_git\application\models\booking_model.php 32
+ERROR - 2022-01-09 12:51:49 --> Severity: Notice  --> Undefined property: stdClass::$room_type E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 371
+ERROR - 2022-01-09 12:51:49 --> Severity: Notice  --> Undefined property: stdClass::$room_type E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 372
+ERROR - 2022-01-09 12:53:02 --> Severity: Notice  --> Undefined property: stdClass::$room_type E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 371
+ERROR - 2022-01-09 12:53:02 --> Severity: Notice  --> Undefined property: stdClass::$room_type E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 372
+ERROR - 2022-01-09 12:56:38 --> Severity: Notice  --> Undefined property: stdClass::$room_type E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 371
+ERROR - 2022-01-09 12:56:38 --> Severity: Notice  --> Undefined property: stdClass::$room_type E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 372
+ERROR - 2022-01-09 12:57:20 --> Severity: Notice  --> Undefined property: stdClass::$room_type E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 371
+ERROR - 2022-01-09 12:57:20 --> Severity: Notice  --> Undefined property: stdClass::$room_type E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 372
+ERROR - 2022-01-09 12:59:32 --> Severity: Notice  --> Undefined property: stdClass::$room_type E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 371
+ERROR - 2022-01-09 12:59:32 --> Severity: Notice  --> Undefined property: stdClass::$room_type E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 372
+ERROR - 2022-01-09 13:05:47 --> Severity: Notice  --> Undefined property: stdClass::$room_type E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 371
+ERROR - 2022-01-09 13:05:47 --> Severity: Notice  --> Undefined property: stdClass::$room_type E:\wamp64\www\atithi_bhavan_git\application\views\booking\edit.php 372

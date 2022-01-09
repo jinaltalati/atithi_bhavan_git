@@ -36,6 +36,8 @@ class Booking extends CI_Controller
         $this->load->view('footer_view');
     }
 
+    
+
     public function add($building_id="",$floor_id, $room_id="", $error = "")
     {
         $data['title'] = "Add Booking";
@@ -47,6 +49,7 @@ class Booking extends CI_Controller
         $data['floor_data'] = $this->booking_model->getlistFloor($floor_id);
         $data['room_data'] = $this->booking_model->getlistRoom($room_id);
         $data['room_type_data'] = $this->booking_model->getlistRoomType($building_id);
+        $data['countryData'] = $this->booking_model->getlistCountry();
 
         $this->load->view('header_view', $data);
         $this->load->view('left_view');
@@ -55,21 +58,56 @@ class Booking extends CI_Controller
 
         if ($this->input->post('submit'))
         {
-            $result = $this->booking_model->addRecord($building_id,$room_id);
-            if ($result)
-            {
-                $message = "Room Booked Successfully.";
-                $this->session->set_userdata('message_success', $message);
-                redirect(base_url() . 'dashboard/room_listing');
-            }
-            else
-            {
-                $message = "Booking already exists.";
-                $this->session->set_flashdata($this->router->class, $this->input->post('data'));
-                $this->session->set_userdata('message_error', $message);
-                redirect(base_url() . 'booking/add/'.$building_id.'/'.$room_id);
-            }
+            // $this->form_validation->set_rules('mobile','mobile', 'required|trim');
+            // $this->form_validation->set_rules('mobile','mobile', 'required|trim');
+            // $this->form_validation->set_rules('mobile','mobile', 'required|trim');
+            // $this->form_validation->set_rules('mobile','mobile', 'required|trim');
+            // $this->form_validation->set_rules('mobile','mobile', 'required|trim');
+      
+            // if($this->form_validation->run() == FALSE){
+            //     $this->addnew($_POST['mode'],$_POST['eid']);
+            // }
+            // else
+            // {
+
+                $result = $this->booking_model->addRecord($building_id,$room_id);
+                if ($result)
+                {
+                    $message = "Room Booked Successfully.";
+                    $this->session->set_userdata('message_success', $message);
+                    redirect(base_url() . 'dashboard/room_listing');
+                }
+                else
+                {
+                    $message = "Booking already exists.";
+                    $this->session->set_flashdata($this->router->class, $this->input->post('data'));
+                    $this->session->set_userdata('message_error', $message);
+                    redirect(base_url() . 'booking/add/'.$building_id.'/'.$room_id);
+                }
+            //}
         }
+    }
+    public function getStateByCountryId($eid){
+        $html='<option value="">Select</option>';
+        $result=$this->booking_model->getStateListByCountryId($eid);
+        foreach ($result as $key => $value) {
+            $html.='<option value="'.$value->id.'">'.$value->name.'</option>';
+        }
+        echo $html;
+    }
+
+    public function getStateByCountryIdEdit($eid,$stateId){
+        $html='<option value="">Select</option>';
+        $result=$this->booking_model->getStateListByCountryId($eid);
+        foreach ($result as $key => $value) {
+            if($value->id==$stateId){
+                $sel="selected";
+            }else{
+                $sel="";
+            }
+            $html.='<option '.$sel.' value="'.$value->id.'">'.$value->name.'</option>';
+        }
+        echo $html;
     }
 
     public function edit($building_id="", $floor_id="", $room_id="", $error = "")
@@ -98,6 +136,8 @@ class Booking extends CI_Controller
         $data['room_data'] = $this->booking_model->getlistRoom($room_id);
         $data['room_type_data'] = $this->booking_model->getlistRoomType($building_id);
         $data['booking_data'] = $this->booking_model->getlistBooking($building_id,$floor_id,$room_id);
+
+        $data['countryData'] = $this->booking_model->getlistCountry();
     
         $this->load->view('header_view', $data);
         //$this->load->view('left_view');

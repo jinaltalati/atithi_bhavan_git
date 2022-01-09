@@ -51,11 +51,35 @@
                            
                         </div>
                         <div class="row-fluid">
-                            <div class="span12">
+                            <div class="span4">
                                  <div class="control-group">
-                                    <label for="address" class="control-label">Address<span class="danger">*</span></label>
+                                    <label for="address" class="control-label">Country<span class="danger">*</span></label>
                                     <!-- <div class="controls"> -->
-                                        <textarea name="data[address]" id="address" class='form-control'  data-rule-required="true" placeholder="Address"><?php echo (isset($data['address']))?$data['address']:'';?></textarea>
+                                        
+                                         <select name="data[country_id]" id="country_id" class='form-control'  data-rule-required="true" placeholder="Country" value="<?php echo (isset($data['country_id']))?$data['country_id']:'';?>" required="required">
+                                         <!-- <option value="">Select</option> -->
+                                            <?php foreach ($countryData as $key => $value) { ?>
+                                                <option value="<?= $value->id; ?>"><?= $value->name; ?></option>
+                                            <?php } ?>
+                                        </select>
+                                    <!-- </div> -->
+                                </div> 
+                            </div>
+                            <div class="span4">
+                                 <div class="control-group">
+                                    <label for="state" class="control-label">State<span class="danger">*</span></label>
+                                    <select id="state_id" name="state_id" class="form-control txtselect" data-rule-required="true">
+                                        <option value="">---Select---</option>
+                                    </select>
+                                    
+                                </div> 
+                            </div>
+                            <div class="span4">
+                                 <div class="control-group">
+                                    <label for="address" class="control-label">City<span class="danger">*</span></label>
+                                    <!-- <div class="controls"> -->
+                                        <input type="text" name="data[city]" id="city" class='form-control'  data-rule-required="true" placeholder="City" value="<?php echo (isset($data['city']))?$data['city']:'';?>">
+                                         
                                     <!-- </div> -->
                                 </div> 
                             </div>
@@ -289,9 +313,27 @@ $('.datepicker').datepicker({
 });
 </script>
 
-
-<script type="text/javascript">
-$(document).ready(function(){ 
+<script type="text/javascript">  
+$(document).ready(function(){
+    //alert('hh');
+    //on load get state
+    var eid = $('#country_id').val();
+    var url='<?php echo base_url(). $this->router->class; ?>/getStateByCountryId/'+eid;
+    $.ajax({url:url,
+    success:function(result){   
+      $("#state_id").html(result);
+    }});
+    //end on load get state
+    //get state on change
+    $(document).on('change', '#country_id', function () {
+        var eid = $('#country_id').val();
+        var url='<?php echo base_url(). $this->router->class; ?>/getStateByCountryId/'+eid;
+        $.ajax({url:url,
+        success:function(result){   
+          $("#state_id").html(result);
+        }});
+    }); 
+    //end on change country get state
 
   $("#donate_deposite").change(function(){
     
@@ -341,7 +383,10 @@ $(document).ready(function(){
                     //console.log(obj);
                     $("#customer_name").val(obj.customer_name);
                     $("#email").val(obj.email);
-                    $("#address").val(obj.address);
+                    $("#country_id").val(obj.country_id);
+                    $("#state_id").val(obj.state_id);
+                    $("#city").val(obj.city);
+                    //$("#address").val(obj.address);
               }
             });
         }
