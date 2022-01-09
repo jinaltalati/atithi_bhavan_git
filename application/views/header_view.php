@@ -218,6 +218,11 @@
                             </ul>
                         </li>
 
+                        <li <?php echo ($this->router->class == 'reprint_receipt') ? "class='active'" : ""; ?> >
+                            <a class="head_menu" href="<?php echo base_url('reprint_receipt'); ?>" class='dropdown-toggle'> <span>Reprint Receipt</span></a>
+                        </li>
+
+
                        <!--  <li <?php echo ($this->router->class == 'booking') ? "class='active'" : ""; ?> > <a class="head_menu" href="javascript:void(0);" data-toggle="dropdown" class='dropdown-toggle'> <span>Booking</span> <span class="caret"></span> </a>
                             <ul class="dropdown-menu">
                                 <li> <a href="<?php echo base_url(); ?>booking/">Booked Room List</a> </li>

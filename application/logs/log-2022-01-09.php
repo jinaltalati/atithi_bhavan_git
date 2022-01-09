@@ -249,3 +249,52 @@ ERROR - 2022-01-09 08:26:54 --> Severity: Notice  --> Undefined property: stdCla
 ERROR - 2022-01-09 08:26:58 --> Severity: Notice  --> Undefined property: stdClass::$room_type C:\xampp\htdocs\atithi_bhavan_git\application\views\booking\edit.php 345
 ERROR - 2022-01-09 08:26:58 --> Severity: Notice  --> Undefined property: stdClass::$room_type C:\xampp\htdocs\atithi_bhavan_git\application\views\booking\edit.php 346
 ERROR - 2022-01-09 08:55:51 --> Severity: Notice  --> Undefined variable: bookiing_data C:\xampp\htdocs\atithi_bhavan_git\application\views\room_booking_view.php 99
+ERROR - 2022-01-09 09:19:37 --> Severity: Notice  --> Undefined property: stdClass::$room_type C:\xampp\htdocs\atithi_bhavan_git\application\views\booking\edit.php 345
+ERROR - 2022-01-09 09:19:37 --> Severity: Notice  --> Undefined property: stdClass::$room_type C:\xampp\htdocs\atithi_bhavan_git\application\views\booking\edit.php 346
+ERROR - 2022-01-09 09:19:38 --> Severity: Notice  --> Undefined property: stdClass::$room_type C:\xampp\htdocs\atithi_bhavan_git\application\views\booking\edit.php 345
+ERROR - 2022-01-09 09:19:38 --> Severity: Notice  --> Undefined property: stdClass::$room_type C:\xampp\htdocs\atithi_bhavan_git\application\views\booking\edit.php 346
+ERROR - 2022-01-09 09:19:56 --> Severity: Notice  --> Undefined variable: booking_data C:\xampp\htdocs\atithi_bhavan_git\application\views\room_booking_view.php 101
+ERROR - 2022-01-09 09:19:56 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\atithi_bhavan_git\application\views\room_booking_view.php 101
+ERROR - 2022-01-09 09:19:56 --> Severity: Notice  --> Undefined variable: donation_data C:\xampp\htdocs\atithi_bhavan_git\application\views\room_booking_view.php 106
+ERROR - 2022-01-09 09:19:56 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\atithi_bhavan_git\application\views\room_booking_view.php 106
+ERROR - 2022-01-09 09:20:24 --> Severity: Notice  --> Undefined variable: booking_data C:\xampp\htdocs\atithi_bhavan_git\application\views\room_booking_view.php 101
+ERROR - 2022-01-09 09:20:24 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\atithi_bhavan_git\application\views\room_booking_view.php 101
+ERROR - 2022-01-09 09:20:24 --> Severity: Notice  --> Undefined variable: donation_data C:\xampp\htdocs\atithi_bhavan_git\application\views\room_booking_view.php 106
+ERROR - 2022-01-09 09:20:24 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\atithi_bhavan_git\application\views\room_booking_view.php 106
+ERROR - 2022-01-09 09:20:25 --> Severity: Notice  --> Undefined variable: booking_data C:\xampp\htdocs\atithi_bhavan_git\application\views\room_booking_view.php 101
+ERROR - 2022-01-09 09:20:25 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\atithi_bhavan_git\application\views\room_booking_view.php 101
+ERROR - 2022-01-09 09:20:25 --> Severity: Notice  --> Undefined variable: donation_data C:\xampp\htdocs\atithi_bhavan_git\application\views\room_booking_view.php 106
+ERROR - 2022-01-09 09:20:25 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\atithi_bhavan_git\application\views\room_booking_view.php 106
+ERROR - 2022-01-09 09:39:50 --> Severity: Notice  --> Undefined variable: booking_data C:\xampp\htdocs\atithi_bhavan_git\application\views\room_booking_view.php 101
+ERROR - 2022-01-09 09:39:50 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\atithi_bhavan_git\application\views\room_booking_view.php 101
+ERROR - 2022-01-09 09:39:50 --> Severity: Notice  --> Undefined variable: donation_data C:\xampp\htdocs\atithi_bhavan_git\application\views\room_booking_view.php 106
+ERROR - 2022-01-09 09:39:50 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\atithi_bhavan_git\application\views\room_booking_view.php 106
+ERROR - 2022-01-09 09:40:13 --> Severity: Notice  --> Undefined variable: booking_data C:\xampp\htdocs\atithi_bhavan_git\application\views\room_booking_view.php 101
+ERROR - 2022-01-09 09:40:13 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\atithi_bhavan_git\application\views\room_booking_view.php 101
+ERROR - 2022-01-09 09:40:13 --> Severity: Notice  --> Undefined variable: donation_data C:\xampp\htdocs\atithi_bhavan_git\application\views\room_booking_view.php 106
+ERROR - 2022-01-09 09:40:13 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\atithi_bhavan_git\application\views\room_booking_view.php 106
+ERROR - 2022-01-09 09:40:14 --> Severity: Notice  --> Undefined variable: booking_data C:\xampp\htdocs\atithi_bhavan_git\application\views\room_booking_view.php 101
+ERROR - 2022-01-09 09:40:14 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\atithi_bhavan_git\application\views\room_booking_view.php 101
+ERROR - 2022-01-09 09:40:14 --> Severity: Notice  --> Undefined variable: donation_data C:\xampp\htdocs\atithi_bhavan_git\application\views\room_booking_view.php 106
+ERROR - 2022-01-09 09:40:14 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\atithi_bhavan_git\application\views\room_booking_view.php 106
+ERROR - 2022-01-09 09:40:16 --> Query error: Table 'db_sn_atithi_bhavan.size' doesn't exist
+ERROR - 2022-01-09 09:44:21 --> Severity: Notice  --> Undefined property: stdClass::$building_name C:\xampp\htdocs\atithi_bhavan_git\application\views\reprint_recipt\list.php 55
+ERROR - 2022-01-09 09:44:21 --> Severity: Notice  --> Undefined property: stdClass::$building_name C:\xampp\htdocs\atithi_bhavan_git\application\views\reprint_recipt\list.php 55
+ERROR - 2022-01-09 09:44:21 --> Severity: Notice  --> Undefined property: stdClass::$building_name C:\xampp\htdocs\atithi_bhavan_git\application\views\reprint_recipt\list.php 55
+ERROR - 2022-01-09 09:47:01 --> Severity: Warning  --> call_user_func_array() expects parameter 1 to be a valid callback, class 'Error' does not have a method 'index' C:\xampp\htdocs\atithi_bhavan_git\system\core\CodeIgniter.php 359
+ERROR - 2022-01-09 09:47:42 --> Severity: Warning  --> call_user_func_array() expects parameter 1 to be a valid callback, class 'Error' does not have a method 'index' C:\xampp\htdocs\atithi_bhavan_git\system\core\CodeIgniter.php 359
+ERROR - 2022-01-09 09:47:43 --> Severity: Warning  --> call_user_func_array() expects parameter 1 to be a valid callback, class 'Error' does not have a method 'index' C:\xampp\htdocs\atithi_bhavan_git\system\core\CodeIgniter.php 359
+ERROR - 2022-01-09 09:47:43 --> Severity: Warning  --> call_user_func_array() expects parameter 1 to be a valid callback, class 'Error' does not have a method 'index' C:\xampp\htdocs\atithi_bhavan_git\system\core\CodeIgniter.php 359
+ERROR - 2022-01-09 09:48:06 --> Severity: Warning  --> call_user_func_array() expects parameter 1 to be a valid callback, class 'Error' does not have a method 'index' C:\xampp\htdocs\atithi_bhavan_git\system\core\CodeIgniter.php 359
+ERROR - 2022-01-09 09:48:22 --> Severity: Warning  --> call_user_func_array() expects parameter 1 to be a valid callback, class 'Error' does not have a method 'index' C:\xampp\htdocs\atithi_bhavan_git\system\core\CodeIgniter.php 359
+ERROR - 2022-01-09 09:48:23 --> Severity: Warning  --> call_user_func_array() expects parameter 1 to be a valid callback, class 'Error' does not have a method 'index' C:\xampp\htdocs\atithi_bhavan_git\system\core\CodeIgniter.php 359
+ERROR - 2022-01-09 09:49:24 --> Severity: Notice  --> Undefined property: stdClass::$building_name C:\xampp\htdocs\atithi_bhavan_git\application\views\reprint_receipt\list.php 55
+ERROR - 2022-01-09 09:49:24 --> Severity: Notice  --> Undefined property: stdClass::$building_name C:\xampp\htdocs\atithi_bhavan_git\application\views\reprint_receipt\list.php 55
+ERROR - 2022-01-09 09:49:24 --> Severity: Notice  --> Undefined property: stdClass::$building_name C:\xampp\htdocs\atithi_bhavan_git\application\views\reprint_receipt\list.php 55
+ERROR - 2022-01-09 09:55:11 --> Severity: Notice  --> Undefined property: stdClass::$room_name C:\xampp\htdocs\atithi_bhavan_git\application\views\reprint_receipt\list.php 63
+ERROR - 2022-01-09 09:55:11 --> Severity: Notice  --> Undefined property: stdClass::$room_name C:\xampp\htdocs\atithi_bhavan_git\application\views\reprint_receipt\list.php 63
+ERROR - 2022-01-09 09:55:11 --> Severity: Notice  --> Undefined property: stdClass::$room_name C:\xampp\htdocs\atithi_bhavan_git\application\views\reprint_receipt\list.php 63
+ERROR - 2022-01-09 10:02:44 --> Query error: Not unique table/alias: 'building'
+ERROR - 2022-01-09 10:06:01 --> Severity: Notice  --> Undefined property: stdClass::$room_name C:\xampp\htdocs\atithi_bhavan_git\application\views\reprint_receipt\list.php 65
+ERROR - 2022-01-09 10:06:01 --> Severity: Notice  --> Undefined property: stdClass::$room_name C:\xampp\htdocs\atithi_bhavan_git\application\views\reprint_receipt\list.php 65
+ERROR - 2022-01-09 10:06:01 --> Severity: Notice  --> Undefined property: stdClass::$room_name C:\xampp\htdocs\atithi_bhavan_git\application\views\reprint_receipt\list.php 65

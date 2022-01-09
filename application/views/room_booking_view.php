@@ -101,11 +101,17 @@
             foreach ($booking_data as $key => $value) {
                 $sum = $sum + $value['deposite'];
 
-            } ?>
+            }
+            $donation = 0;
+            foreach ($donation_data as $key => $value) {
+                $donation = $donation + $value['deposite'];
+
+            }
+             ?>
             <!--template bindings={}-->
             <div class="demo-fill-remaining" style="font-weight: bold; text-align: center;"><span>
-            Deposit: <span>₹<?php echo $sum; ?></span>
-            Donation: <span>₹117300</span>
+            Deposit: <span>₹<?php echo @$sum; ?></span>
+            Donation: <span>₹<?php echo @$donation; ?></span>
             </span></div>
         </div>
         <div _ngcontent-rfl-104="" class="clearfix"></div>
