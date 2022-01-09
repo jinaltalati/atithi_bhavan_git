@@ -139,9 +139,14 @@ label {
     display: inline-block;
     max-width: 100%;
     margin-bottom: -5px;
-    font-weight: 700;
+    font-weight: 100!important;
     margin-top: 11px;
     margin-left: 13px!important;
+    font-family: sans-serif!important;
+}
+
+span {
+	font-family: sans-serif!important;
 }
 
 .chzn-single {

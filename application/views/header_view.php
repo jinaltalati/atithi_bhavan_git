@@ -134,7 +134,7 @@
 
 </head>
 
-<body  style="font-family: 'Open Sans', sans-serif;">
+<body  style="font-family: sans-serif!important;">
 
 
 <app-root ng-version="2.3.1" _nghost-ggi-72=""><router-outlet _ngcontent-ggi-72=""></router-outlet><app-home><md-sidenav-layout  class="demo-sidenav-layout md-sidenav-container"><div class="md-sidenav-backdrop"></div><md-sidenav style="display: none;"  id="sidebar_toggle" mode="push" tabindex="-1" class="md-sidenav-closed md-sidenav-push"><cdk-focus-trap class="md-sidenav-focus-trap"><!--template bindings={}--><div class="cdk-focus-trap-content">

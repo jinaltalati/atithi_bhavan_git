@@ -96,7 +96,7 @@ else if ($this->session->userdata('message_error'))
             var e = {sPaginationType: "full_numbers", oLanguage: {sSearch: "<span>Search:</span> ", sInfo: "Showing <span>_START_</span> to <span>_END_</span> of <span>_TOTAL_</span> entries", sLengthMenu: "_MENU_ <span>entries per page</span>"}, sDom: "lfrtip", aoColumnDefs: [{bSortable: !1, aTargets: [2]}], oColVis: {buttonText: "Change columns <i class='icon-angle-down'></i>"}, oTableTools: {sSwfPath: "../assets/js/plugins/datatable/swf/copy_csv_xls_pdf.swf"}}, t = $(".userTable").dataTable(e);
             $(".dataTables_filter input").attr("placeholder", "Search here...");
             $(".dataTables_length select").wrap("<div class='input-mini'></div>").chosen({disable_search_threshold: 9999999});
-            t.columnFilter({sPlaceHolder: "head:after", aoColumns: [ {type: "text"},{type: "text"}]});
+            t.columnFilter({sPlaceHolder: "head:after", aoColumns: [ {type: "text"},{type: "text"},{type: "text"},{type: "text"},{type: "text"},{type: "text"}]});
             $(".userTable").css("width", "100%")
         }
     });
