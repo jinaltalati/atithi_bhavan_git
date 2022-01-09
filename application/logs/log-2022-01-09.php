@@ -248,3 +248,4 @@ ERROR - 2022-01-09 08:26:54 --> Severity: Notice  --> Undefined property: stdCla
 ERROR - 2022-01-09 08:26:54 --> Severity: Notice  --> Undefined property: stdClass::$room_type C:\xampp\htdocs\atithi_bhavan_git\application\views\booking\edit.php 346
 ERROR - 2022-01-09 08:26:58 --> Severity: Notice  --> Undefined property: stdClass::$room_type C:\xampp\htdocs\atithi_bhavan_git\application\views\booking\edit.php 345
 ERROR - 2022-01-09 08:26:58 --> Severity: Notice  --> Undefined property: stdClass::$room_type C:\xampp\htdocs\atithi_bhavan_git\application\views\booking\edit.php 346
+ERROR - 2022-01-09 08:55:51 --> Severity: Notice  --> Undefined variable: bookiing_data C:\xampp\htdocs\atithi_bhavan_git\application\views\room_booking_view.php 99

@@ -95,9 +95,16 @@
 
           <button _ngcontent-rfl-104="" class="submit-btn md-warn">MULTIPLE CHECKOUT
             </button>
+
+            <?php 
+            $sum = 0;
+            foreach ($booking_data as $key => $value) {
+                $sum = $sum + $value['deposite'];
+
+            } ?>
             <!--template bindings={}-->
             <div class="demo-fill-remaining" style="font-weight: bold; text-align: center;"><span>
-            Deposit: <span>₹20000</span>
+            Deposit: <span>₹<?php echo $sum; ?></span>
             Donation: <span>₹117300</span>
             </span></div>
         </div>
