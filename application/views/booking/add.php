@@ -387,6 +387,13 @@ $(document).ready(function(){
                     $("#state_id").val(obj.state_id);
                     $("#city").val(obj.city);
                     //$("#address").val(obj.address);
+                    var state_id=obj.state_id;
+                    var eid = $('#country_id').val();
+                    var url='<?php echo base_url(). $this->router->class; ?>/getStateByCountryIdEdit/'+eid+'/'+state_id;
+                    $.ajax({url:url,
+                    success:function(result){   
+                      $("#state_id").html(result);
+                    }});
               }
             });
         }

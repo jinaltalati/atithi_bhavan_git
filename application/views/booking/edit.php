@@ -554,7 +554,17 @@ $(document).ready(function(){
                     //console.log(obj);
                     $("#customer_name").val(obj.customer_name);
                     $("#email").val(obj.email);
-                    $("#address").val(obj.address);
+                    $("#country_id").val(obj.country_id);
+                    $("#state_id").val(obj.state_id);
+                    $("#city").val(obj.city);
+                    //$("#address").val(obj.address);
+                    var state_id=obj.state_id;
+                    var eid = $('#country_id').val();
+                    var url='<?php echo base_url(). $this->router->class; ?>/getStateByCountryIdEdit/'+eid+'/'+state_id;
+                    $.ajax({url:url,
+                    success:function(result){   
+                      $("#state_id").html(result);
+                    }});
               }
             });
         }
