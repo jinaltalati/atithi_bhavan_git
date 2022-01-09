@@ -54,6 +54,7 @@ class Reprint_receipt_model extends CI_Model
     {
 
         $this->db->select("building.building_name,booking.*,floor.floor_name,room.room_name");
+        $this->db->limit("10");
         $this->db->from("booking");
         $this->db->join('building', 'building.id = booking.building_id'); // this is second table name with both table ids
         $this->db->join('floor', 'floor.id = booking.floor_id'); // this is second table name with both table ids
