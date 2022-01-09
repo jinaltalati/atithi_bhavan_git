@@ -1,6 +1,11 @@
 <?php
 	$listFloor = array_column($floor_data,'floor_name','id');
     $listRoomTypes = array_column($room_type_data,'room_type_name','id');
+
+    if(empty($arrRooms)) {
+        echo "<div>No rooms found.</div>";
+    }
+
     foreach($listFloor as $kf=>$floor){
                 if(empty($arrRooms[$kf])) { continue; }
         ?>

@@ -86,7 +86,8 @@ class Dashboard extends CI_Controller
         $this->load->model('room_model');
         $data['building_data'] = $this->db->from("building")->order_by("id", "ASC")->get()->result_array();
 
-        $data['booking_data'] = $this->db->where('donate_deposite', "yes")->from("booking")->order_by("id", "ASC")->get()->result_array();
+        $data['donation_data'] = $this->db->where('donate_deposite', "yes")->from("booking")->order_by("id", "ASC")->get()->result_array();
+        $data['booking_data'] = $this->db->from("booking")->order_by("id", "ASC")->get()->result_array();
         /*$data['floor_data'] = $this->db->from("floor")->order_by("id", "ASC")->get()->result_array();
         $data['room_type_data'] = $this->db->from("room_type")->order_by("id", "ASC")->get()->result_array();
         $rooms = $this->db->where('building_id', '1')->from("room")->order_by("id", "ASC")->get()->result_array();
