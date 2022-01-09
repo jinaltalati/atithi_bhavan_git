@@ -327,7 +327,7 @@ select.form-control, textarea.form-control :focus {
     border-color: #337ab7;
 }
 .head_menu {
-    color: #ffffff!important;
+    color: #fff!important;
 }
 
 .profile-menu{position:fixed;right:12px;width:370px;box-shadow:0 4px 10px 5px rgba(0,0,0,.2)!important;background:#fff;top:60px;z-index:99!important}.profile-menu-bg{position:fixed;height:100%;width:100%;content:"";left:0;top:0;z-index:9!important}.material-icons.up-arrow{top:-14px;right:10px;position:absolute}</style>
