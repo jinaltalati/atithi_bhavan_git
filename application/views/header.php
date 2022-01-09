@@ -127,12 +127,12 @@
 
     </head>
     <?php if($this->session->userdata('role_id') == '2'){ ?>
-        <body  class="theme-satgreen">
+        <body  class="theme-satgreen" style="font-family: 'Open Sans', sans-serif;">
             <style type="text/css">
                 #left .subnav .subnav-title .active { background: #56af45; }
             </style>
     <?php } else { ?>
-        <body class="theme-lightgrey">
+        <body class="theme-lightgrey" style="font-family: 'Open Sans', sans-serif;">
     <?php } ?>
         <div>
             <h4><center><a href="<?php echo base_url(); ?>" id="brand">Atithi Bhavan<!-- <?php // echo SITE_TITLE;  ?> --> </a></center></h4>
