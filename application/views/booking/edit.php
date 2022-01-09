@@ -1,3 +1,11 @@
+<div class="body-content">
+        
+        
+    <div class="demo-grid-list">
+    
+    <md-card class="mdCard">
+        <md-card-content class="demo-basic-list">
+
 <script src="<?php echo base_url(); ?>assets/js/plugins/fileupload/bootstrap-fileupload.min.js"></script>
 <?php $data = ($this->session->flashdata($this->router->class)); ?>
 <div class="row-fluid">
@@ -13,7 +21,7 @@
                 <div class="tab-content padding tab-content-inline tab-content-bottom">
 
                       <div class="tab-pane active" id="profile">
-                       <?php echo form_open($this->router->class."/add/", array('class' => 'form-validate form-horizontal', 'id' => 'frm-user', 'name' => 'frm-user','enctype'=>'multipart/form-data')); ?> 
+                       <?php echo form_open($this->router->class."/edit/".$building_id."/".$floor_id."/".$room_id, array('class' => 'form-validate form-horizontal', 'id' => 'frm-user', 'name' => 'frm-user','enctype'=>'multipart/form-data')); ?> 
                         <div class="row-fluid">
                             <div class="span4">
                                 <div class="control-group">
@@ -60,7 +68,7 @@
                                     <!-- <div class="controls"> -->
                                         <select name="data[building_id]" id="building_id" class='form-control'  data-rule-required="true" placeholder="Building Name" value="<?php echo (isset($data['building_id']))?$data['building_id']:'';?>">
                                             <!-- <option value="">Select</option> -->
-                                            <?php foreach ($building_data as $key => $value) { ?>
+                                             <?php foreach ($building_data as $key => $value) { ?>
                                                 <option value="<?= $value->id; ?>"><?= $value->building_name; ?></option>
                                             <?php } ?>
                                         </select>
@@ -74,9 +82,9 @@
                                     <!-- <div class="controls"> -->
                                         <select name="data[floor_id]" id="floor_id" class='form-control'  data-rule-required="true" placeholder="Floor Name" value="<?php echo (isset($data['floor_id']))?$data['floor_id']:'';?>" required="required">
                                            <!-- <option value="">Select</option> -->
-                                            <!-- <?php foreach ($floor_data as $key => $value) { ?>
+                                            <?php foreach ($floor_data as $key => $value) { ?>
                                                 <option value="<?= $value->id; ?>"><?= $value->floor_name; ?></option>
-                                            <?php } ?>  -->
+                                            <?php } ?>
                                         </select>
                                     <!-- </div> -->
                                 </div>
@@ -86,9 +94,10 @@
                                     <label for="room_type_id" class="control-label">Room Type<span class="danger">*</span></label>
                                     <!-- <div class="controls"> -->
                                         <select name="data[room_type_id]" id="room_type_id" class='form-control'  data-rule-required="true" placeholder="Room Type" value="<?php echo (isset($data['room_type_id']))?$data['room_type_id']:'';?>">
-                                            <!-- <?php foreach ($room_type_data as $key => $value) { ?>
-                                                <option value="<?= $value['id']; ?>"><?= $value['room_type_name']; ?></option>
-                                            <?php } ?> -->
+                                             <?php foreach ($room_type_data as $key => $value) { 
+                                                if($room_data[0]->room_type_id == $value['id']) { ?>
+                                                    <option  value="<?= $value['id']; ?>"><?= $value['room_type_name']; ?></option>
+                                            <?php } } ?>
                                         </select>
                                   <!--   </div> -->
                                 </div> 
@@ -139,7 +148,7 @@
                                 <div class="control-group">
                                     <label for="stay_period" class="control-label">Stay Period(Days)<span class="danger">*</span></label>
                                     <!-- <div class="controls"> -->
-                                        <input type="number" name="data[stay_period]" id="stay_period" class='form-control'  data-rule-required="true" placeholder="Total Payment" value="1">
+                                        <input type="number" name="data[stay_period]" id="stay_period" class='form-control'  data-rule-required="true" placeholder="Stay Period" value="<?php echo (isset($booking_data[0]->stay_period))? $booking_data[0]->stay_period:'';?>">
                                     <!-- </div> -->
                                 </div> 
                             </div>
@@ -149,8 +158,8 @@
                                     <label for="pay_status" class="control-label">Room Pay Status<span class="danger">*</span></label>
                                     <!-- <div class="controls"> -->
                                         <select id="pay_status" name="data[pay_status]" class="form-control">
-                                            <option class="paid">Paid</option>
-                                            <option class="free">Free</option>
+                                            <option <?php if($booking_data[0]->pay_status == "Paid") { echo "selected"; } ?> class="paid">Paid</option>
+                                            <option  <?php if($booking_data[0]->pay_status == "Free") { echo "selected"; } ?> class="free">Free</option>
                                         </select>
                                     <!-- </div> -->
                                 </div>    
@@ -173,7 +182,7 @@
                                 <div class="control-group">
                                     <label for="charge" class="control-label">Room Charge<span class="danger">*</span></label>
                                     <!-- <div class="controls"> -->
-                                        <input type="text" name="data[charge]" id="charge" class='form-control'  data-rule-required="true" placeholder="Room charge" value="<?php echo $room_data[0]->charge; ?>">
+                                        <input type="text" name="data[charge]" id="charge" class='form-control'  data-rule-required="true" placeholder="Room charge" value="<?php if($booking_data[0]->pay_status == "Free") { echo "0"; } else { echo $room_data[0]->charge; } ?>">
                                     <!-- </div> -->
                                 </div>    
                             </div>
@@ -181,7 +190,7 @@
                                 <div class="control-group">
                                     <label for="deposite" class="control-label">Room Deposite<span class="danger">*</span></label>
                                     <!-- <div class="controls"> -->
-                                        <input type="text" name="data[deposite]" id="deposite" class='form-control'  data-rule-required="true" placeholder="Room Deposite" value="<?php echo $room_data[0]->deposite; ?>">
+                                        <input type="text" name="data[deposite]" id="deposite" class='form-control'  data-rule-required="true" placeholder="Room Deposite" value="<?php if($booking_data[0]->pay_status == "Free") { echo "0"; } else { echo $room_data[0]->deposite; } ?>">
                                     <!-- </div> -->
                                 </div>  
 
@@ -193,7 +202,7 @@
                                 <div class="control-group">
                                     <label for="total_payment" class="control-label">Total Payment<span class="danger">*</span></label>
                                     <!-- <div class="controls"> -->
-                                        <input type="text" name="data[total_payment]" id="total_payment" class='form-control'  data-rule-required="true" placeholder="Total Payment" value="<?php echo $room_data[0]->charge; ?>">
+                                        <input type="text" name="data[total_payment]" id="total_payment" class='form-control'  data-rule-required="true" placeholder="Total Payment" value="<?php if($booking_data[0]->pay_status == "Free") { echo "0"; } else { echo $room_data[0]->charge; } ?>">
                                     <!-- </div> -->
                                 </div> 
                             </div>
@@ -214,6 +223,16 @@
                                 </div> 
  
                             </div>
+                             <div class="span4">
+                                <div class="control-group">
+                                    <label for="id_proof" class="control-label">ID Proof</label>
+                                    <!-- <div class="controls"> -->
+                                      
+                                        <input type="text" name="id_proof" name="data[id_proof]" id="id_proof" class='form-control'  data-rule-required="true" placeholder="Id Proof" value="<?php echo (isset($booking_data[0]->id_proof))? $booking_data[0]->id_proof:'';?>">
+                                      
+                                    <!-- </div> -->
+                                </div> 
+                            </div>
                             <div class="span4">
                                 <div class="control-group">
                                     <label for="reference_by" class="control-label">Reference By</label>
@@ -230,7 +249,7 @@
                                 <div class="control-group">
                                     <!-- <div class="controls"> -->
                                     <button type="submit" name="submit" value="submit" class="btn_ad_ed">Checkout</button>
-                                    <a href="<?= base_url(); ?>dashboard/room_listing"><button type="reset" class="btn">Cancel</button></a>
+                                    <button type="reset" class="btn">Cancel</button>
                                <!--  </div> -->
                                 </div>
                             </div>
@@ -422,6 +441,9 @@
     </div>
 </div>
 
+  </div>
+</div></md-sidenav-layout></app-home><!--template bindings={}--></app-root>
+
 <script type="text/javascript">
 $('.datepicker').datepicker({
     dateFormat: "yy-mm-dd"
@@ -490,25 +512,25 @@ $(document).ready(function(){
         }
     });
 
-    getFloorRoomTypes(<?php echo $building_id; ?>);
+   // getFloorRoomTypes(<?php echo $building_id; ?>);
 });
 
-function getFloorRoomTypes(building_id){
-    $.ajax({
-      type: "POST",
-      url: '<?= base_url(); ?>booking/getFloorRoomTypes', 
-      data: {building_id:building_id},
-      dataType: "text",  
-      cache:false,
-      success: 
-      function(data){
-            const obj = JSON.parse(data);                  
-            //console.log(obj);
+// function getFloorRoomTypes(building_id){
+//     $.ajax({
+//       type: "POST",
+//       url: '<?= base_url(); ?>booking/getFloorRoomTypes', 
+//       data: {building_id:building_id},
+//       dataType: "text",  
+//       cache:false,
+//       success: 
+//       function(data){
+//             const obj = JSON.parse(data);                  
+//             //console.log(obj);
 
-            $("#floor_id").empty().append(obj.strFloors);
-            $("#room_type_id").empty().append(obj.strTypes);
+//             $("#floor_id").empty().append(obj.strFloors);
+//             $("#room_type_id").empty().append(obj.strTypes);
             
-      }
-    });
-}
+//       }
+//     });
+// }
 </script>

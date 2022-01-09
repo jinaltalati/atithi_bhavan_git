@@ -44,8 +44,78 @@
     </div>
     <?php }?>
 
+    <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Where would you like to put room from cleaning?</h4>
+        </div>
+        <div class="modal-body">
+          <input type="hidden" name="change_room_status_id" class="change_room_status_id" id="change_room_status_id" value="">
+          <button class="btn btn_available status-available" style="color: #fff!important;" value="Available">Available</button>
+          <button class="btn btn_maintainance status-maintainance" style="color: #fff!important;" value="Maintainance">Maintainance</button>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+    </div>
+  
 
     <script type="text/javascript">
+
+    $(".btn_available").click(function(){
+
+        var ids = $('.change_room_status_id').val();
+        var id = ids.split("_");
+        //alert(ids);
+        $.ajax({
+
+            type: "POST",
+            url: '<?= base_url(); ?>dashboard/change_room_status', 
+            data: {building_id: id[1], floor_id: id[2], room_id: id[3], room_status: id[4], status: 'Available'},
+            dataType: "text",  
+            cache:false,
+            success: 
+              function(data){
+                alert(data);  //as a debugging message.
+                location.reload();
+                //$('#big_'+ids).attr('class="green"');
+              }
+
+            
+        });
+    });
+
+    $(".btn_maintainance").click(function(){
+
+        var ids = $('.change_room_status_id').val();
+        var id = ids.split("_");
+        //alert(ids);
+        $.ajax({
+
+            type: "POST",
+            url: '<?= base_url(); ?>dashboard/change_room_status', 
+            data: {building_id: id[1], floor_id: id[2], room_id: id[3], room_status: id[4], status: 'Maintainance'},
+            dataType: "text",  
+            cache:false,
+            success: 
+              function(data){
+                alert(data);  //as a debugging message.
+                location.reload();
+                //$('#big_'+ids).attr('class="green"');
+              }
+
+            
+        });
+    });
+
+
     $(".room_status").click(function(){
         //alert('hi');
         var ids = $(this).attr('id');

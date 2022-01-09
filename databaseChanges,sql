@@ -32,3 +32,6 @@ ALTER TABLE `booking`
 
 ALTER TABLE `beneficiaries`
 	ADD COLUMN `id_proof` VARCHAR(255) NOT NULL AFTER `mobile`;
+
+  ALTER TABLE `room`
+  CHANGE COLUMN `status` `status` ENUM('Available','In Cleaning','Booked','Time Up','Maintainance') NOT NULL DEFAULT 'Available' COLLATE 'latin1_swedish_ci' AFTER `deposite`;

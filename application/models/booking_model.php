@@ -34,8 +34,8 @@ class Booking_model extends CI_Model
             $data['beneficiary_id'] = $this->db->insert_id();
         }
         else{
-            // $row = $query->row_array();
-            // $data['beneficiary_id'] = $row['id'];
+            $row = $query->row_array();
+            $data['beneficiary_id'] = $row['id'];
 
                 $arrUser = array();
                 $arrUser['customer_name'] = $data['customer_name'];
@@ -69,7 +69,7 @@ class Booking_model extends CI_Model
         // }
     }
     
-    function editRecord($building_id="",$room_id="")
+    function editRecord($building_id="", $floor_id="", $room_id="")
     {
         $data = $this->input->post('data');
     
@@ -87,6 +87,7 @@ class Booking_model extends CI_Model
             $data['status'] = 'Checkout';
             $this->db->where('room_id', $room_id);
             $this->db->where('building_id', $building_id);
+            $this->db->where('floor_id', $floor_id);
             $query = $this->db->update('booking',$data);
             return $query;
         // }
@@ -192,7 +193,6 @@ class Booking_model extends CI_Model
         $this->db->from("building");
         $this->db->order_by("id", "ASC");
         $query = $this->db->get();
-        $data = array();
         if ($query->num_rows() > 0)
         {
             foreach ($query->result() as $rows)
@@ -214,6 +214,26 @@ class Booking_model extends CI_Model
             foreach ($query->result() as $rows)
             {
                 $data[$rows->id] = $rows;
+                //$data[] = $rows;
+            }
+        }
+        return $data;
+    }
+
+    function getlistBooking($building_id="",$floor_id, $room_id="")
+    {
+        $this->db->from("booking");
+        $this->db->where("building_id", $building_id);
+        $this->db->where("floor_id", $floor_id);
+        $this->db->where("room_id", $room_id);
+        $this->db->order_by("id", "ASC");
+        $query = $this->db->get();
+        $data = array();
+        if ($query->num_rows() > 0)
+        {
+            foreach ($query->result() as $rows)
+            {
+                $data[] = $rows;
                 //$data[] = $rows;
             }
         }

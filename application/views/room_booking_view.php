@@ -54,20 +54,26 @@
                             <span class="big">Time Up</span>
                         </div>
                     </li>
+
+                    <li class="yellow" style="background: #e2e22b;">
+                        <div class="">
+                            <span class="big">Maintainance</span>
+                        </div>
+                    </li>
                     
                 </ul>
             </div>
             </div>
         </div>
 
-        <div _ngcontent-rfl-104="" class="typeFilter MR0 ML0" style="margin-left: 5%!important;">
+       <!--  <div _ngcontent-rfl-104="" class="typeFilter MR0 ML0" style="margin-left: 5%!important;">
             <div _ngcontent-rfl-104="" class="ML0">
                 <small _ngcontent-rfl-104="">Type:</small>
             </div>
             <div _ngcontent-rfl-104="" class="clearfix"></div>
             <ul class="stats" style="color: #fff!important;">
 
-                    <li class="yellow" style="background: #e2e22b;">
+                    <li class="yellow" style="background: #6b80cb;">
                         <div class="">
                             <span class="big">Free</span>
                         </div>
@@ -79,7 +85,7 @@
                     </li>
                     
                 </ul>
-        </div>
+        </div> -->
 
         <div _ngcontent-rfl-104="" class="multiple margin-top-10">
             
@@ -199,6 +205,10 @@
     .status-in_cleaning{
         border:5px solid #368ee0 !important;
         background: #368ee0!important;
+    }
+    .status-maintainance{
+        border:5px solid #e2e22b !important;
+        background: #e2e22b!important;
     }
 </style>
 

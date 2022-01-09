@@ -48,8 +48,6 @@ class Booking extends CI_Controller
         $data['room_data'] = $this->booking_model->getlistRoom($room_id);
         $data['room_type_data'] = $this->booking_model->getlistRoomType($building_id);
 
-        //pre($data);
-        
         $this->load->view('header_view', $data);
         $this->load->view('left_view');
         $this->load->view("booking/add.php", $data);
@@ -60,7 +58,7 @@ class Booking extends CI_Controller
             $result = $this->booking_model->addRecord($building_id,$room_id);
             if ($result)
             {
-                $message = "Room Booking Successfully.";
+                $message = "Room Booked Successfully.";
                 $this->session->set_userdata('message_success', $message);
                 redirect(base_url() . 'dashboard/room_listing');
             }
@@ -74,7 +72,7 @@ class Booking extends CI_Controller
         }
     }
 
-    public function edit($building_id="", $room_id="", $error = "")
+    public function edit($building_id="", $floor_id="", $room_id="", $error = "")
     {
         if($this->session->userdata('role_id') != '1')
         {
@@ -99,22 +97,21 @@ class Booking extends CI_Controller
         $data['floor_data'] = $this->booking_model->getlistFloor($floor_id);
         $data['room_data'] = $this->booking_model->getlistRoom($room_id);
         $data['room_type_data'] = $this->booking_model->getlistRoomType($building_id);
-
-        
-
+        $data['booking_data'] = $this->booking_model->getlistBooking($building_id,$floor_id,$room_id);
+    
         $this->load->view('header_view', $data);
-        $this->load->view('left_view');
+        //$this->load->view('left_view');
         $this->load->view("booking/edit.php", $data);
         $this->load->view('footer_view');
 
         if ($this->input->post('submit'))
         {
-            $result = $this->booking_model->editRecord($building_id,$room_id);
+            $result = $this->booking_model->editRecord($building_id,$floor_id,$room_id);
             if ($result)
             {
-                $message = "Booking updated Successfully.";
+                $message = "Checkout Successfully.";
                 $this->session->set_userdata('message_success', $message);
-                redirect(base_url() . 'dashboard/welcome');
+                redirect(base_url() . 'dashboard/room_listing');
             }
             else
             {

@@ -27,7 +27,7 @@
                                 <div class="control-group">
                                     <label for="mobile" class="control-label">Mobile<span class="danger">*</span></label>
                                     <!-- <div class="controls"> -->
-                                        <input type="text" name="data[mobile]" id="mobile" class='form-control'  data-rule-required="true" placeholder="Mobile" value="<?php echo (isset($data['mobile']))?$data['mobile']:'';?>">
+                                        <input type="number" name="data[mobile]" id="mobile" class='form-control'  data-rule-required="true" placeholder="Mobile" value="<?php echo (isset($data['mobile']))?$data['mobile']:'';?>">
                                     <!-- </div> -->
                                 </div>  
                             </div>
@@ -232,11 +232,12 @@
                                     <label for="id_proof" class="control-label">ID Proof</label>
                                     <!-- <div class="controls"> -->
                                          <select name="data[id_proof]" id="id_proof" class='form-control'  data-rule-required="true" placeholder="Payment Mode" value="<?php echo (isset($data['id_proof']))?$data['id_proof']:'';?>">
-                                            <option value="adhar_card">Adhar Card</option>
-                                            <option value="driving_licence">Driving Licence</option>
-                                            <option value="election_card">Election Card</option>
-                                            <option value="pan_card">Pan Card</option>
-                                            <option value="passport">Passport</option>
+
+                                            <option value="Adhar Card">Adhar Card</option>
+                                            <option value="Driving Licence">Driving Licence</option>
+                                            <option value="Election Card">Election Card</option>
+                                            <option value="Pan Card">Pan Card</option>
+                                            <option value="Passport">Passport</option>
                                         </select>
                                     <!-- </div> -->
                                 </div> 

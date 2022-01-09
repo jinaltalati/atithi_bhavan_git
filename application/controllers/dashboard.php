@@ -123,9 +123,7 @@ class Dashboard extends CI_Controller
     {
        $data = $this->input->post();
 
-       $this->db->where('building_id', $data['building_id']);
        $this->db->where('id', $data['room_id']);
-       $this->db->where('status', $data['room_status']);
        $query = $this->db->get("room");
 
         if ($query->num_rows != 0)
