@@ -91,6 +91,7 @@ class Booking extends CI_Controller
     public function getStateByCountryId($eid){
         $html='<option value="">Select</option>';
         $result=$this->booking_model->getStateListByCountryId($eid);
+        //pre($result);
         foreach ($result as $key => $value) {
             $html.='<option value="'.$value->id.'">'.$value->name.'</option>';
         }

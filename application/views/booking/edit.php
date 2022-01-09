@@ -71,7 +71,7 @@
                                     <label for="state" class="control-label">State<span class="danger">*</span></label>
                                     <input type="hidden" id="hidden_state_id" value="<?php echo $arrData->state_id; ?>">
                                     <select id="state_id" name="data[state_id]" class="form-control txtselect" data-rule-required="true">
-                                        <option value="">---Select---</option>
+                                        <option value="">Select</option>
                                     </select>
                                     
                                 </div> 
@@ -488,7 +488,7 @@ $(document).ready(function(){
     var eid = $('#country_id').val();
     var stateid=$('#hidden_state_id').val();
     var url='<?php echo base_url(). $this->router->class; ?>/getStateByCountryIdEdit/'+eid+'/'+stateid;
-    alert(stateid);
+   // alert(stateid);
     $.ajax({url:url,
     success:function(result){   
       $("#state_id").html(result);

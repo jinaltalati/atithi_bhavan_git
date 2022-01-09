@@ -68,8 +68,8 @@
                             <div class="span4">
                                  <div class="control-group">
                                     <label for="state" class="control-label">State<span class="danger">*</span></label>
-                                    <select id="state_id" name="state_id" class="form-control txtselect" data-rule-required="true">
-                                        <option value="">---Select---</option>
+                                    <select id="state_id" name="data[state_id]" class="form-control txtselect" data-rule-required="true">
+                                        
                                     </select>
                                     
                                 </div> 
