@@ -1,0 +1,5 @@
+    .ui-priority-primary, .ui-widget-content .ui-priority-primary, .ui-widget-header .ui-priority-primary { float:right; }
+    .ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {  margin: 0.5em 0.2em 0.4em;   padding: 0.2em 0.6em 0.3em;}
+    .ui-timepicker-div dl {  text-align: left; }
+    .ui-timepicker-div dl dt { clear: left; float: left; padding: 0 0 0 5px; }
+    .ui-timepicker-div dl dd { margin: 0 10px 10px 40%; }

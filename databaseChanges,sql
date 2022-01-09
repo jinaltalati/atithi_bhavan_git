@@ -1,0 +1,26 @@
+ALTER TABLE `room` CHANGE `status` `status` ENUM('Available','Booked','Checkout','Time Up') CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL DEFAULT 'Available';
+
+
+CREATE TABLE `beneficiaries` (
+  `id` int(255) UNSIGNED NOT NULL,
+  `mobile` varchar(11) NOT NULL,
+  `beneficiay_name` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `address` varchar(255) NOT NULL,
+  `created` datetime NOT NULL,
+  `last_booking` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+ALTER TABLE `beneficiaries`
+  ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `beneficiaries`
+  MODIFY `id` int(255) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+
+ALTER TABLE `beneficiaries` CHANGE `beneficiay_name` `customer_name` VARCHAR(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL;
+
+ALTER TABLE `booking` ADD `stay_period` INT(255) UNSIGNED NOT NULL AFTER `members`, ADD `pay_status` ENUM('Paid','Free') NULL DEFAULT NULL AFTER `stay_period`;
+
+ALTER TABLE `booking` ADD `beneficiary_id` INT(255) UNSIGNED NULL DEFAULT NULL AFTER `id`;

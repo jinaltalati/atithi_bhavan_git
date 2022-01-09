@@ -1,0 +1,22 @@
+#navigation #brand { padding-right: 9px;}
+.box .two-title { padding: 7px 10px; }
+.box .two-title h3.right { float: right; } 
+/*#main { min-height: 680px; }*/
+#main  .container-fluid{ min-height: 1000px; }
+#left .subnav .subnav-title .toggle-subnav i { display: inline-block; top:8px; }
+#left .subnav .subnav-title .active { background: none repeat scroll 0 0 #368ee0;  color: #fff !important; }
+#left .subnav .subnav-title .toggle-subnav  {  padding-bottom: 7px;  padding-top: 7px; }	
+#left .subnav .subnav-title span { margin-left:30px }
+#left .subnav .subnav-title span { font-size:15px; }
+.dashboard_box span  { font-size:14px; }
+#left .subnav .subnav-menu > li > a { padding-left:44px; }
+.dashboard_cont { padding:0 0 40px; }
+#left .subnav { margin-top: 10px; }
+
+.fix-alert {color: #c09853;  background-color: #fcf8e3; margin-bottom: 20px; padding: 8px 35px 8px 14px; text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5); margin-bottom: 20px;
+    padding: 8px 35px 8px 14px;  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5); }
+
+ .table tr:nth-child(even) { background-color: #EEEEEE; }
+ 
+ .pointer {cursor: pointer;}
+ .nosort {background-image: none !important;}
