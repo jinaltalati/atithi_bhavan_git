@@ -28,7 +28,8 @@ else if ($this->session->userdata('message_error'))
         <div class="box box-color box-bordered">
             <div class="box-title two-title">
                 <h3><i class="glyphicon-notes"></i><?php echo $title; ?></h3>
-                <!-- <a href="<?php echo base_url(). $this->router->class . '/add/'; ?>"><h3 class="right"><i class="icon-plus"></i>Add Building</h3></a> -->
+                 <a href="<?php echo base_url(). $this->router->class . '/add/'; ?>"><h3 class="right">PDF<i class="icon-download"></i></h3></a> 
+                 <a href="<?php echo base_url(). $this->router->class . '/add/'; ?>"><h3 class="right">Excel<i class="icon-download"></i></h3></a> 
             </div>
             <!---------------------------- TABLE START ------------------------------------>
             <div class="box-content nopadding">
@@ -40,8 +41,8 @@ else if ($this->session->userdata('message_error'))
                             <th>Floor</th>
                             <th>Room No</th>
                             <th>Donor Name</th>
-                            <th>Receipt Type</th>
-                            <th>Print</th>
+                            <th>Donor Mobile</th>
+                            <th>Room Donation</th>
                         </tr>     
                         <tr>
                             <th>Id</th>
@@ -49,8 +50,8 @@ else if ($this->session->userdata('message_error'))
                             <th>Floor</th>
                             <th>Room No</th>
                             <th>Donor Name</th>
-                            <th>Receipt Type</th>
-                            <th>Print</th>
+                            <th>Donor Mobile</th>
+                            <th>Room Donation</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -64,10 +65,9 @@ else if ($this->session->userdata('message_error'))
                                 <td><?php echo  $data->floor_name; ?></td>
                                 <td><?php echo  $data->room_name; ?></td>
                                 <td><?php echo  $data->customer_name; ?></td>
-                                <td><?php echo  $data->status; ?></td>
-                                <td>
-                                    <a href=" <?php echo base_url() . $this->router->class . '/edit/' . $data->id; ?>" class="btn" rel="tooltip" title="Edit"><i class="icon-print"></i></a>
-                                </td>
+                                <td><?php echo  $data->mobile; ?></td>
+                                <td><?php echo  '₹'.$data->deposite; ?></td>
+                               
                             </tr>
                             <?php
                         }
@@ -96,7 +96,7 @@ else if ($this->session->userdata('message_error'))
             var e = {sPaginationType: "full_numbers", oLanguage: {sSearch: "<span>Search:</span> ", sInfo: "Showing <span>_START_</span> to <span>_END_</span> of <span>_TOTAL_</span> entries", sLengthMenu: "_MENU_ <span>entries per page</span>"}, sDom: "lfrtip", aoColumnDefs: [{bSortable: !1, aTargets: [2]}], oColVis: {buttonText: "Change columns <i class='icon-angle-down'></i>"}, oTableTools: {sSwfPath: "../assets/js/plugins/datatable/swf/copy_csv_xls_pdf.swf"}}, t = $(".userTable").dataTable(e);
             $(".dataTables_filter input").attr("placeholder", "Search here...");
             $(".dataTables_length select").wrap("<div class='input-mini'></div>").chosen({disable_search_threshold: 9999999});
-            t.columnFilter({sPlaceHolder: "head:after", aoColumns: [ {type: "text"},{type: "text"},{type: "text"},{type: "text"},{type: "text"},{type: "text"}]});
+            t.columnFilter({sPlaceHolder: "head:after", aoColumns: [ {type: "text"},{type: "text"},{type: "text"},{type: "text"},{type: "text"},{type: "text"},{type: "text"}]});
             $(".userTable").css("width", "100%")
         }
     });

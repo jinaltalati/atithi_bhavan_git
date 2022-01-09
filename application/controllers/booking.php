@@ -21,7 +21,7 @@ class Booking extends CI_Controller
     public function index($error = "")
     {
         $result = $this->booking_model->listRecords();
-
+        $data['type'] = 'accomo';
         $data['arrData'] = $result;
 
         $data['title'] = "Booking List";
@@ -41,6 +41,7 @@ class Booking extends CI_Controller
     public function add($building_id="",$floor_id, $room_id="", $error = "")
     {
         $data['title'] = "Add Booking";
+        $data['type'] = 'accomo';
         $data['error'] = $error;
         $data['building_id'] = $building_id;
         $data['floor_id'] = $floor_id;
@@ -124,6 +125,7 @@ class Booking extends CI_Controller
         //pre($data);
 
         $data['title'] = "Edit Booking";
+        $data['type'] = 'accomo';
         $data['error'] = $error;
         //$data['building_data'] = $this->booking_model->getlistBuilding($building_id);
         //$data['floor_data'] = $this->booking_model->getlistFloor();

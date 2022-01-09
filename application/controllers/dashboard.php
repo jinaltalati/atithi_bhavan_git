@@ -44,16 +44,16 @@ class Dashboard extends CI_Controller
         $this->load->view('footer_view');
     }
 
-    public function report()
+    public function reports()
     {
         $data['title'] = 'Reports';
-
+        $data['type'] = "report";
         $this->load->model('room_model');
         $data['building_data'] = $this->db->from("building")->order_by("id", "ASC")->get()->result_array();
 
         $this->load->view('header_view', $data);
         //$this->load->view('left_view');
-        $this->load->view('room_booking_view.php');
+        $this->load->view('room_donation_report/list.php', $data);
         $this->load->view('footer_view');
     }
 
@@ -61,7 +61,7 @@ class Dashboard extends CI_Controller
     public function welcome()
     {
         $data['title'] = 'Home';
-
+        $data['type'] = "home";
         // $this->load->model('room_model');
         // $data['building_data'] = $this->db->from("building")->order_by("id", "ASC")->get()->result_array();
         // $data['floor_data'] = $this->db->from("floor")->order_by("id", "ASC")->get()->result_array();
@@ -82,7 +82,7 @@ class Dashboard extends CI_Controller
     public function room_listing()
     {
         $data['title'] = 'Room Listing';
-
+        $data['type'] = 'accomo';
         $this->load->model('room_model');
         $data['building_data'] = $this->db->from("building")->order_by("id", "ASC")->get()->result_array();
 
@@ -107,6 +107,7 @@ class Dashboard extends CI_Controller
 
     public function get_floorplan_html($building_id)
     {
+        $data['type'] = 'accomo';
         $data['floor_data'] = $this->db->from("floor")->order_by("id", "ASC")->get()->result_array();
         $data['room_type_data'] = $this->db->from("room_type")->order_by("id", "ASC")->get()->result_array();
 
@@ -124,6 +125,7 @@ class Dashboard extends CI_Controller
 
     public function change_room_status()
     {
+        $data['type'] = 'accomo';
        $data = $this->input->post();
 
        $this->db->where('id', $data['room_id']);
@@ -174,6 +176,56 @@ class Dashboard extends CI_Controller
         else
         {
             $message = "Email or Password Is incorrect";
+            $this->session->set_flashdata($this->router->class, $this->input->post('data'));
+            $this->session->set_userdata('message_error', $message);
+            redirect(base_url() . 'dashboard');
+        }
+    }
+
+    public function forget_pass()
+    {
+        $email = $this->input->post('email');
+        
+        $result = $this->admin_model->forget_pass($email);
+
+        if ($result)
+        {
+
+         //        $from_email = "shahjeeny7@gmail.com"; 
+         //        $to_email = $this->input->post('email'); 
+
+         //        //Load email library 
+         //        $this->load->library('email'); 
+
+         //        $this->email->from($from_email, 'Password Reset'); 
+         //        $this->email->to($to_email);
+         //        $this->email->subject('Email Test'); 
+         //        $this->email->message('Testing the email class.'); 
+   
+         // //Send mail 
+         //    if($this->email->send())  {
+
+         //        $message = "Password Reset sucessfully. Please check your email.";
+         //        $this->session->set_flashdata($this->router->class, $this->input->post('data'));
+         //        $this->session->set_userdata('message_success', $message);
+         //        redirect(base_url() . 'dashboard');
+         //    } else {
+
+
+         //        $message = "Error while sending email.";
+         //        $this->session->set_flashdata($this->router->class, $this->input->post('data'));
+         //        $this->session->set_userdata('message_error', $message);
+         //        redirect(base_url() . 'dashboard');
+         //    }
+            
+            $message = "Password Reset sucessfully. Please check your email.";
+            $this->session->set_flashdata($this->router->class, $this->input->post('data'));
+            $this->session->set_userdata('message_success', $message);
+            redirect(base_url() . 'dashboard');
+        }
+        else
+        {
+            $message = "Email is incorrect";
             $this->session->set_flashdata($this->router->class, $this->input->post('data'));
             $this->session->set_userdata('message_error', $message);
             redirect(base_url() . 'dashboard');
@@ -250,7 +302,8 @@ class Dashboard extends CI_Controller
     }
 
     public function changePassword()
-    {               
+    {    
+        $data['type'] = 'accomo';           
         $forget_salt = $this->input->post('password_salt');
         $password = $this->input->post('cpassword');
 

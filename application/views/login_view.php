@@ -89,7 +89,7 @@ select.form-control:focus {
                    
                     <div  class="clearfix"></div>
                     <div id="forgot-password-block" style="display: none;">
-                        <form>
+                        <?php echo form_open("dashboard/forget_pass");?>
                       
                             <h3 class="margin-top-35 rightToLeftAnimation">Forgot password</h3>
                             <div class="sendOTPForm rightToLeftAnimation">
@@ -99,13 +99,13 @@ select.form-control:focus {
                                 </div>
 
                                 <div  class="col-md-12 text-right">
-                                <button type="submit" name="admin_forget_pass" class="lineButton btn-block">Send OTP
+                                <button type="submit" name="admin_forget_pass" id="admin_forget_pass" class="lineButton btn-block">Send
                                 </button>
                                 </div>
                                 <div class="clearfix"></div>
                             </div>
                             
-                        </form>
+                        <?php echo form_close(); ?>
                     </div>
                     <div class="clearfix"></div>
                         

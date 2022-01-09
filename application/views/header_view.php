@@ -134,7 +134,7 @@
 
 </head>
 
-<body  style="font-family: 'Open Sans', sans-serif;">
+<body  style="font-family: sans-serif!important;">
 
 
 <app-root ng-version="2.3.1" _nghost-ggi-72=""><router-outlet _ngcontent-ggi-72=""></router-outlet><app-home><md-sidenav-layout  class="demo-sidenav-layout md-sidenav-container"><div class="md-sidenav-backdrop"></div><md-sidenav style="display: none;"  id="sidebar_toggle" mode="push" tabindex="-1" class="md-sidenav-closed md-sidenav-push"><cdk-focus-trap class="md-sidenav-focus-trap"><!--template bindings={}--><div class="cdk-focus-trap-content">
@@ -175,11 +175,21 @@
         
        
 	    <ul style="margin-left: 10px;" class="nav navbar-nav">
-             <li <?php echo ($this->router->class == 'dashboard') ? "class='active'" : ""; ?> >
-                <a class="head_menu" href="<?php echo base_url('dashboard/room_listing'); ?>" class='dropdown-toggle'> <span>Dashboard</span></a>
+            
+            <?php if($type == 'home') { ?>
+                <li <?php echo ($this->router->class == 'dashboard') ? "class='active'" : ""; ?> >
+                <span>Home</span>
                 </li>
+            <?php } ?>
+	        <?php
 
-	        <?php if($this->session->userdata('role_id') == '1') { ?> 
+                if(@$type == "accomo") { ?>
+
+                    <li <?php echo ($this->router->class == 'dashboard') ? "class='active'" : ""; ?> >
+                    <a class="head_menu" href="<?php echo base_url('dashboard/room_listing'); ?>" class='dropdown-toggle'> <span>Dashboard</span></a>
+                    </li>
+
+                <?php if($this->session->userdata('role_id') == '1') { ?> 
 
 
                         <li <?php echo ($this->router->class == 'admins') ? "class='active'" : ""; ?> > <a class="head_menu" href="javascript:void(0);" data-toggle="dropdown" class='dropdown-toggle'> <span>Admins</span> <span class="caret"></span> </a>
@@ -231,9 +241,16 @@
                         </li> -->
 
                         
-            <?php } else { ?>
-            	
+            <?php } }  ?>
+
+
+            <?php  if(@$type == "report") { ?>
+                <li <?php echo ($this->router->class == 'reprint_receipt') ? "class='active'" : ""; ?> >
+                    <a class="head_menu" href="<?php echo base_url('room_donation_report'); ?>" class='dropdown-toggle'> <span>Room Donation Report</span></a>
+                </li>
             <?php } ?>
+            	
+           
 	    </ul>
 
         </span>

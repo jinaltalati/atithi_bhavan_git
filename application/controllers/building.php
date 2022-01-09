@@ -25,6 +25,7 @@ class Building extends CI_Controller
         $data['arrData'] = $result;
 
         $data['title'] = "Building List";
+        $data['type'] = 'accomo';
         $data['error'] = $error;
         $this->load->view('header_view', $data);
         //$this->load->view('left_view');
@@ -35,6 +36,7 @@ class Building extends CI_Controller
     public function add($error = "")
     {
         $data['title'] = "Add Building";
+        $data['type'] = 'accomo';
         $data['error'] = $error;
 
         $this->load->view('header_view', $data);
@@ -73,6 +75,7 @@ class Building extends CI_Controller
         $data['arrData'] = $result;
 
         $data['title'] = "Edit Building";
+        $data['type'] = 'accomo';
         $data['error'] = $error;
 
         $this->load->view('header_view', $data);

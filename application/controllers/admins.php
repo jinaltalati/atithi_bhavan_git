@@ -31,6 +31,7 @@ class Admins extends CI_Controller
         $data['userData'] = $result;
 
         $data['title'] = "Admin List";
+        $data['type'] = 'accomo';
         $data['error'] = $error;
         $this->load->view('header_view', $data);
         $this->load->view('left_view');
@@ -47,6 +48,7 @@ class Admins extends CI_Controller
         }
         
         $data['title'] = "Add Admin";
+        $data['type'] = 'accomo';
         $data['error'] = $error;
         
         $this->load->view('header_view', $data);
@@ -103,6 +105,7 @@ class Admins extends CI_Controller
            
 
             $data['title'] = "Edit Profile";
+            $data['type'] = 'accomo';
             $data['error'] = $error;
 
             $this->load->view('header_view', $data);
@@ -182,6 +185,7 @@ class Admins extends CI_Controller
 
     public function delete($id = "")
     {
+        
         $result = $this->admin_model->delete($id);
         if ($result == '1')
         {

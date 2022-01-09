@@ -3,7 +3,7 @@
 if (!defined('BASEPATH'))
     exit('No direct script access allowed');
 
-class Reprint_receipt_model extends CI_Model
+class Room_donation_report_model extends CI_Model
 {
 
     public function __construct()

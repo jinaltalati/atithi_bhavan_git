@@ -26,6 +26,7 @@ class Floor extends CI_Controller
         $data['arrData'] = $result;
 
         $data['title'] = "Floor List";
+        $data['type'] = 'accomo';
         $data['error'] = $error;
         $this->load->view('header_view', $data);
         $this->load->view('left_view');
@@ -36,6 +37,7 @@ class Floor extends CI_Controller
     public function add($error = "")
     {
         $data['title'] = "Add Floor";
+        $data['type'] = 'accomo';
         $data['error'] = $error;
         $data['building_data'] = $this->floor_model->getlistBuilding();
 
@@ -75,6 +77,7 @@ class Floor extends CI_Controller
         $data['arrData'] = $result;
 
         $data['title'] = "Edit Floor";
+        $data['type'] = 'accomo';
         $data['error'] = $error;
         $data['building_data'] = $this->floor_model->getlistBuilding();
 

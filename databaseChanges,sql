@@ -52,3 +52,6 @@ ALTER TABLE `beneficiaries`
 
  ALTER TABLE `beneficiaries` CHANGE `last_booking` `last_booking` DATETIME NULL DEFAULT NULL;
   
+=======
+ALTER TABLE `admins` CHANGE `role_id` `role_id` INT(11) NOT NULL DEFAULT '2' COMMENT '1- Admin , 2-Manager';
+
