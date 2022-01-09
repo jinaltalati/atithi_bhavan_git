@@ -3,7 +3,7 @@
 if (!defined('BASEPATH'))
     exit('No direct script access allowed');
 
-class Reprint_receipt extends CI_Controller
+class Room_donation_report extends CI_Controller
 {
     public function __construct()
     {
@@ -17,21 +17,21 @@ class Reprint_receipt extends CI_Controller
         //     redirect(base_url().'dailyentry/');
 
         $this->load->library('form_validation');
-        $this->load->model('reprint_receipt_model');
+        $this->load->model('room_donation_report_model');
     }
 
     public function index($error = "")
     {
-        $result = $this->reprint_receipt_model->listRecords();
+        $data['title'] = 'Room Donation report';
+        $data['type'] = "report";
+
+        $result = $this->room_donation_report_model->listRecords();
 
         $data['arrData'] = $result;
-
-        $data['title'] = "Reprint Receipt List";
-        $data['type'] = 'accomo';
         $data['error'] = $error;
         $this->load->view('header_view', $data);
         //$this->load->view('left_view');
-        $this->load->view("reprint_receipt/list.php", $data);
+        $this->load->view("room_donation_report/list.php", $data);
         $this->load->view('footer_view');
     }
 

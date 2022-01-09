@@ -25,6 +25,7 @@ class Room extends CI_Controller
         $data['arrData'] = $result;
 
         $data['title'] = "Room List";
+        $data['type'] = 'accomo';
         $data['error'] = $error;
         $data['building_data'] = $this->room_model->getlistBuilding();
         $data['floor_data'] = $this->room_model->getlistRoom();
@@ -47,6 +48,7 @@ class Room extends CI_Controller
     public function add($error = "")
     {
         $data['title'] = "Add Room";
+        $data['type'] = 'accomo';
         $data['error'] = $error;
         $data['building_data'] = $this->room_model->getlistBuilding();
         $data['floor_data'] = $this->room_model->getlistRoom();
@@ -87,6 +89,7 @@ class Room extends CI_Controller
         $data['arrData'] = $result;
 
         $data['title'] = "Edit Room";
+        $data['type'] = 'accomo';
         $data['error'] = $error;
         $data['building_data'] = $this->room_model->getlistBuilding();
         // $data['floor_data'] = $this->room_model->getlistRoom();

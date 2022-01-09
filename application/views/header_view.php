@@ -175,11 +175,21 @@
         
        
 	    <ul style="margin-left: 10px;" class="nav navbar-nav">
-             <li <?php echo ($this->router->class == 'dashboard') ? "class='active'" : ""; ?> >
-                <a class="head_menu" href="<?php echo base_url('dashboard/room_listing'); ?>" class='dropdown-toggle'> <span>Dashboard</span></a>
+            
+            <?php if($type == 'home') { ?>
+                <li <?php echo ($this->router->class == 'dashboard') ? "class='active'" : ""; ?> >
+                <span>Home</span>
                 </li>
+            <?php } ?>
+	        <?php
 
-	        <?php if($this->session->userdata('role_id') == '1') { ?> 
+                if(@$type == "accomo") { ?>
+
+                    <li <?php echo ($this->router->class == 'dashboard') ? "class='active'" : ""; ?> >
+                    <a class="head_menu" href="<?php echo base_url('dashboard/room_listing'); ?>" class='dropdown-toggle'> <span>Dashboard</span></a>
+                    </li>
+
+                <?php if($this->session->userdata('role_id') == '1') { ?> 
 
 
                         <li <?php echo ($this->router->class == 'admins') ? "class='active'" : ""; ?> > <a class="head_menu" href="javascript:void(0);" data-toggle="dropdown" class='dropdown-toggle'> <span>Admins</span> <span class="caret"></span> </a>
@@ -231,9 +241,16 @@
                         </li> -->
 
                         
-            <?php } else { ?>
-            	
+            <?php } }  ?>
+
+
+            <?php  if(@$type == "report") { ?>
+                <li <?php echo ($this->router->class == 'reprint_receipt') ? "class='active'" : ""; ?> >
+                    <a class="head_menu" href="<?php echo base_url('room_donation_report'); ?>" class='dropdown-toggle'> <span>Room Donation Report</span></a>
+                </li>
             <?php } ?>
+            	
+           
 	    </ul>
 
         </span>

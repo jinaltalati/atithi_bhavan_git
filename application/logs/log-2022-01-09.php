@@ -309,3 +309,92 @@ ERROR - 2022-01-09 11:38:12 --> Query error: Unknown column 'forget_pwd_salt' in
 ERROR - 2022-01-09 11:42:10 --> Severity: Notice  --> Undefined index: email C:\xampp\htdocs\atithi_bhavan_git\application\models\admin_model.php 82
 ERROR - 2022-01-09 11:44:31 --> Severity: Notice  --> Undefined index: email C:\xampp\htdocs\atithi_bhavan_git\application\models\admin_model.php 82
 ERROR - 2022-01-09 11:45:27 --> Severity: Notice  --> Undefined index: email C:\xampp\htdocs\atithi_bhavan_git\application\models\admin_model.php 82
+ERROR - 2022-01-09 11:58:24 --> Severity: Warning  --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() C:\xampp\htdocs\atithi_bhavan_git\system\libraries\Email.php 1553
+ERROR - 2022-01-09 11:58:25 --> Severity: Warning  --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() C:\xampp\htdocs\atithi_bhavan_git\system\libraries\Email.php 1553
+ERROR - 2022-01-09 11:58:27 --> Severity: Warning  --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() C:\xampp\htdocs\atithi_bhavan_git\system\libraries\Email.php 1553
+ERROR - 2022-01-09 11:58:27 --> Severity: Warning  --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() C:\xampp\htdocs\atithi_bhavan_git\system\libraries\Email.php 1553
+ERROR - 2022-01-09 11:58:28 --> Severity: Warning  --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() C:\xampp\htdocs\atithi_bhavan_git\system\libraries\Email.php 1553
+ERROR - 2022-01-09 11:58:28 --> Severity: Warning  --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() C:\xampp\htdocs\atithi_bhavan_git\system\libraries\Email.php 1553
+ERROR - 2022-01-09 11:58:28 --> Severity: Warning  --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() C:\xampp\htdocs\atithi_bhavan_git\system\libraries\Email.php 1553
+ERROR - 2022-01-09 11:59:42 --> Severity: Warning  --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() C:\xampp\htdocs\atithi_bhavan_git\system\libraries\Email.php 1553
+ERROR - 2022-01-09 12:01:04 --> Severity: Warning  --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() C:\xampp\htdocs\atithi_bhavan_git\system\libraries\Email.php 1553
+ERROR - 2022-01-09 12:01:06 --> Severity: Warning  --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() C:\xampp\htdocs\atithi_bhavan_git\system\libraries\Email.php 1553
+ERROR - 2022-01-09 12:04:01 --> Severity: Notice  --> Undefined variable: booking_data C:\xampp\htdocs\atithi_bhavan_git\application\views\room_booking_view.php 101
+ERROR - 2022-01-09 12:04:01 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\atithi_bhavan_git\application\views\room_booking_view.php 101
+ERROR - 2022-01-09 12:04:01 --> Severity: Notice  --> Undefined variable: donation_data C:\xampp\htdocs\atithi_bhavan_git\application\views\room_booking_view.php 106
+ERROR - 2022-01-09 12:04:01 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\atithi_bhavan_git\application\views\room_booking_view.php 106
+ERROR - 2022-01-09 12:05:18 --> Severity: Notice  --> Undefined variable: booking_data C:\xampp\htdocs\atithi_bhavan_git\application\views\room_booking_view.php 101
+ERROR - 2022-01-09 12:05:18 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\atithi_bhavan_git\application\views\room_booking_view.php 101
+ERROR - 2022-01-09 12:05:18 --> Severity: Notice  --> Undefined variable: donation_data C:\xampp\htdocs\atithi_bhavan_git\application\views\room_booking_view.php 106
+ERROR - 2022-01-09 12:05:18 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\atithi_bhavan_git\application\views\room_booking_view.php 106
+ERROR - 2022-01-09 12:06:00 --> Severity: Notice  --> Undefined variable: booking_data C:\xampp\htdocs\atithi_bhavan_git\application\views\room_booking_view.php 101
+ERROR - 2022-01-09 12:06:00 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\atithi_bhavan_git\application\views\room_booking_view.php 101
+ERROR - 2022-01-09 12:06:00 --> Severity: Notice  --> Undefined variable: donation_data C:\xampp\htdocs\atithi_bhavan_git\application\views\room_booking_view.php 106
+ERROR - 2022-01-09 12:06:00 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\atithi_bhavan_git\application\views\room_booking_view.php 106
+ERROR - 2022-01-09 12:07:02 --> Severity: Notice  --> Undefined variable: booking_data C:\xampp\htdocs\atithi_bhavan_git\application\views\room_booking_view.php 101
+ERROR - 2022-01-09 12:07:02 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\atithi_bhavan_git\application\views\room_booking_view.php 101
+ERROR - 2022-01-09 12:07:02 --> Severity: Notice  --> Undefined variable: donation_data C:\xampp\htdocs\atithi_bhavan_git\application\views\room_booking_view.php 106
+ERROR - 2022-01-09 12:07:02 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\atithi_bhavan_git\application\views\room_booking_view.php 106
+ERROR - 2022-01-09 12:17:28 --> Severity: Notice  --> Undefined variable: booking_data C:\xampp\htdocs\atithi_bhavan_git\application\views\room_booking_view.php 101
+ERROR - 2022-01-09 12:17:28 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\atithi_bhavan_git\application\views\room_booking_view.php 101
+ERROR - 2022-01-09 12:17:28 --> Severity: Notice  --> Undefined variable: donation_data C:\xampp\htdocs\atithi_bhavan_git\application\views\room_booking_view.php 106
+ERROR - 2022-01-09 12:17:28 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\atithi_bhavan_git\application\views\room_booking_view.php 106
+ERROR - 2022-01-09 12:20:08 --> Query error: Unknown column 'room_id' in 'order clause'
+ERROR - 2022-01-09 12:20:10 --> Query error: Unknown column 'room_id' in 'order clause'
+ERROR - 2022-01-09 12:27:56 --> Severity: Notice  --> Undefined variable: booking_data C:\xampp\htdocs\atithi_bhavan_git\application\views\room_booking_view.php 101
+ERROR - 2022-01-09 12:27:56 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\atithi_bhavan_git\application\views\room_booking_view.php 101
+ERROR - 2022-01-09 12:27:56 --> Severity: Notice  --> Undefined variable: donation_data C:\xampp\htdocs\atithi_bhavan_git\application\views\room_booking_view.php 106
+ERROR - 2022-01-09 12:27:56 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\atithi_bhavan_git\application\views\room_booking_view.php 106
+ERROR - 2022-01-09 12:29:40 --> Severity: Notice  --> Undefined variable: booking_data C:\xampp\htdocs\atithi_bhavan_git\application\views\room_booking_view.php 101
+ERROR - 2022-01-09 12:29:40 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\atithi_bhavan_git\application\views\room_booking_view.php 101
+ERROR - 2022-01-09 12:29:40 --> Severity: Notice  --> Undefined variable: donation_data C:\xampp\htdocs\atithi_bhavan_git\application\views\room_booking_view.php 106
+ERROR - 2022-01-09 12:29:40 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\atithi_bhavan_git\application\views\room_booking_view.php 106
+ERROR - 2022-01-09 12:29:52 --> Severity: Notice  --> Undefined variable: booking_data C:\xampp\htdocs\atithi_bhavan_git\application\views\room_booking_view.php 101
+ERROR - 2022-01-09 12:29:52 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\atithi_bhavan_git\application\views\room_booking_view.php 101
+ERROR - 2022-01-09 12:29:52 --> Severity: Notice  --> Undefined variable: donation_data C:\xampp\htdocs\atithi_bhavan_git\application\views\room_booking_view.php 106
+ERROR - 2022-01-09 12:29:52 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\atithi_bhavan_git\application\views\room_booking_view.php 106
+ERROR - 2022-01-09 12:32:11 --> Severity: Notice  --> Undefined variable: type C:\xampp\htdocs\atithi_bhavan_git\application\views\header_view.php 184
+ERROR - 2022-01-09 12:32:34 --> Severity: Notice  --> Undefined variable: type C:\xampp\htdocs\atithi_bhavan_git\application\views\header_view.php 184
+ERROR - 2022-01-09 12:33:10 --> Severity: Notice  --> Undefined variable: type C:\xampp\htdocs\atithi_bhavan_git\application\views\header_view.php 184
+ERROR - 2022-01-09 12:33:30 --> Severity: Notice  --> Undefined variable: type C:\xampp\htdocs\atithi_bhavan_git\application\views\header_view.php 184
+ERROR - 2022-01-09 12:33:31 --> Severity: Notice  --> Undefined variable: type C:\xampp\htdocs\atithi_bhavan_git\application\views\header_view.php 184
+ERROR - 2022-01-09 12:33:31 --> Severity: Notice  --> Undefined variable: type C:\xampp\htdocs\atithi_bhavan_git\application\views\header_view.php 184
+ERROR - 2022-01-09 12:33:32 --> Severity: Notice  --> Undefined variable: type C:\xampp\htdocs\atithi_bhavan_git\application\views\header_view.php 184
+ERROR - 2022-01-09 12:33:32 --> Severity: Notice  --> Undefined variable: type C:\xampp\htdocs\atithi_bhavan_git\application\views\header_view.php 184
+ERROR - 2022-01-09 12:33:49 --> Severity: Notice  --> Undefined variable: type C:\xampp\htdocs\atithi_bhavan_git\application\views\header_view.php 184
+ERROR - 2022-01-09 12:34:57 --> Severity: Notice  --> Undefined variable: type C:\xampp\htdocs\atithi_bhavan_git\application\views\header_view.php 182
+ERROR - 2022-01-09 12:35:36 --> Severity: Notice  --> Undefined variable: type C:\xampp\htdocs\atithi_bhavan_git\application\views\header_view.php 184
+ERROR - 2022-01-09 12:36:41 --> Severity: Notice  --> Undefined variable: type C:\xampp\htdocs\atithi_bhavan_git\application\views\header_view.php 184
+ERROR - 2022-01-09 12:36:41 --> Severity: Notice  --> Undefined variable: type C:\xampp\htdocs\atithi_bhavan_git\application\views\header_view.php 245
+ERROR - 2022-01-09 12:44:47 --> Severity: Notice  --> Undefined variable: arrData C:\xampp\htdocs\atithi_bhavan_git\application\views\room_donation_report\list.php 58
+ERROR - 2022-01-09 12:44:47 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\atithi_bhavan_git\application\views\room_donation_report\list.php 58
+ERROR - 2022-01-09 12:45:00 --> Severity: Notice  --> Undefined variable: type C:\xampp\htdocs\atithi_bhavan_git\application\views\header_view.php 179
+ERROR - 2022-01-09 12:45:00 --> Severity: Notice  --> Undefined variable: type C:\xampp\htdocs\atithi_bhavan_git\application\views\header_view.php 186
+ERROR - 2022-01-09 12:45:00 --> Severity: Notice  --> Undefined variable: type C:\xampp\htdocs\atithi_bhavan_git\application\views\header_view.php 247
+ERROR - 2022-01-09 12:45:55 --> Severity: Notice  --> Undefined variable: type C:\xampp\htdocs\atithi_bhavan_git\application\views\header_view.php 179
+ERROR - 2022-01-09 12:45:55 --> Severity: Notice  --> Undefined variable: type C:\xampp\htdocs\atithi_bhavan_git\application\views\header_view.php 186
+ERROR - 2022-01-09 12:45:55 --> Severity: Notice  --> Undefined variable: type C:\xampp\htdocs\atithi_bhavan_git\application\views\header_view.php 247
+ERROR - 2022-01-09 12:46:51 --> Severity: Notice  --> Undefined variable: type C:\xampp\htdocs\atithi_bhavan_git\application\views\header_view.php 179
+ERROR - 2022-01-09 12:46:51 --> Severity: Notice  --> Undefined variable: type C:\xampp\htdocs\atithi_bhavan_git\application\views\header_view.php 186
+ERROR - 2022-01-09 12:46:51 --> Severity: Notice  --> Undefined variable: type C:\xampp\htdocs\atithi_bhavan_git\application\views\header_view.php 247
+ERROR - 2022-01-09 12:51:06 --> Severity: Notice  --> Undefined variable: type C:\xampp\htdocs\atithi_bhavan_git\application\views\header_view.php 179
+ERROR - 2022-01-09 12:51:06 --> Severity: Notice  --> Undefined variable: type C:\xampp\htdocs\atithi_bhavan_git\application\views\header_view.php 186
+ERROR - 2022-01-09 12:51:06 --> Severity: Notice  --> Undefined variable: type C:\xampp\htdocs\atithi_bhavan_git\application\views\header_view.php 247
+ERROR - 2022-01-09 12:53:52 --> Severity: Notice  --> Undefined variable: type C:\xampp\htdocs\atithi_bhavan_git\application\views\header_view.php 179
+ERROR - 2022-01-09 12:53:52 --> Severity: Notice  --> Undefined variable: type C:\xampp\htdocs\atithi_bhavan_git\application\views\header_view.php 186
+ERROR - 2022-01-09 12:53:52 --> Severity: Notice  --> Undefined variable: type C:\xampp\htdocs\atithi_bhavan_git\application\views\header_view.php 247
+ERROR - 2022-01-09 12:54:58 --> Severity: Notice  --> Undefined variable: type C:\xampp\htdocs\atithi_bhavan_git\application\views\header_view.php 179
+ERROR - 2022-01-09 12:54:58 --> Severity: Notice  --> Undefined variable: type C:\xampp\htdocs\atithi_bhavan_git\application\views\header_view.php 186
+ERROR - 2022-01-09 12:54:58 --> Severity: Notice  --> Undefined variable: type C:\xampp\htdocs\atithi_bhavan_git\application\views\header_view.php 247
+ERROR - 2022-01-09 12:55:31 --> Severity: Notice  --> Undefined variable: type C:\xampp\htdocs\atithi_bhavan_git\application\views\header_view.php 179
+ERROR - 2022-01-09 12:55:31 --> Severity: Notice  --> Undefined variable: type C:\xampp\htdocs\atithi_bhavan_git\application\views\header_view.php 186
+ERROR - 2022-01-09 12:55:31 --> Severity: Notice  --> Undefined variable: type C:\xampp\htdocs\atithi_bhavan_git\application\views\header_view.php 247
+ERROR - 2022-01-09 12:56:00 --> Severity: Notice  --> Undefined variable: type C:\xampp\htdocs\atithi_bhavan_git\application\views\header_view.php 179
+ERROR - 2022-01-09 12:56:00 --> Severity: Notice  --> Undefined variable: type C:\xampp\htdocs\atithi_bhavan_git\application\views\header_view.php 186
+ERROR - 2022-01-09 12:56:00 --> Severity: Notice  --> Undefined variable: type C:\xampp\htdocs\atithi_bhavan_git\application\views\header_view.php 247
+ERROR - 2022-01-09 12:56:26 --> Severity: Notice  --> Undefined variable: type C:\xampp\htdocs\atithi_bhavan_git\application\views\header_view.php 179
+ERROR - 2022-01-09 12:56:26 --> Severity: Notice  --> Undefined variable: type C:\xampp\htdocs\atithi_bhavan_git\application\views\header_view.php 186
+ERROR - 2022-01-09 12:56:26 --> Severity: Notice  --> Undefined variable: type C:\xampp\htdocs\atithi_bhavan_git\application\views\header_view.php 247
+ERROR - 2022-01-09 12:57:03 --> Severity: Notice  --> Undefined variable: type C:\xampp\htdocs\atithi_bhavan_git\application\views\header_view.php 179
+ERROR - 2022-01-09 12:57:03 --> Severity: Notice  --> Undefined variable: type C:\xampp\htdocs\atithi_bhavan_git\application\views\header_view.php 186
+ERROR - 2022-01-09 12:57:03 --> Severity: Notice  --> Undefined variable: type C:\xampp\htdocs\atithi_bhavan_git\application\views\header_view.php 247

@@ -26,6 +26,7 @@ class Room_type extends CI_Controller
         $data['arrData'] = $result;
 
         $data['title'] = "Room Type List";
+        $data['type'] = 'accomo';
         $data['error'] = $error;
         $this->load->view('header_view', $data);
         $this->load->view('left_view');
@@ -36,6 +37,7 @@ class Room_type extends CI_Controller
     public function add($error = "")
     {
         $data['title'] = "Add Room Type";
+        $data['type'] = 'accomo';
         $data['error'] = $error;
         $data['building_data'] = $this->room_type_model->getlistBuilding();
 
@@ -75,6 +77,7 @@ class Room_type extends CI_Controller
         $data['arrData'] = $result;
 
         $data['title'] = "Edit Room Type";
+        $data['type'] = 'accomo';
         $data['error'] = $error;
         $data['building_data'] = $this->room_type_model->getlistBuilding();
 

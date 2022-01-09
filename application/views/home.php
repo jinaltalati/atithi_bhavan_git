@@ -15,7 +15,7 @@
 
                 
                 <!--template bindings={}--><md-grid-tile role="listitem" style="left: calc((20% - 0.8px + 1px) * 0); width: calc((20% - 0.8px) * 1 + 0px); margin-top: calc((20% - 0.8px + 1px) * 0); padding-top: calc((20% - 0.8px) * 1 + 0px);"><figure>
-                    <a href="<?= base_url(); ?>dashboard/accomodation">
+                    <a href="<?= base_url(); ?>dashboard/room_listing">
                         <md-card class="cardBlogs">
                             <md-card-title-group><div><md-card-title><img src="<?= base_url(); ?>assets/images/accommodation.png"></md-card-title><md-card-title><h3>Accommodation</h3></md-card-title><md-card-title><h6>Add, Update, Campus &amp; buildings</h6></md-card-title></div>
                                 
@@ -31,7 +31,7 @@
 
                 
                 <!--template bindings={}--><md-grid-tile role="listitem" style="left: calc((20% - 0.8px + 1px) * 1); width: calc((20% - 0.8px) * 1 + 0px); margin-top: calc((20% - 0.8px + 1px) * 0); padding-top: calc((20% - 0.8px) * 1 + 0px);"><figure>
-                    <a href="<?= base_url(); ?>dashboard/report">
+                    <a href="<?= base_url(); ?>room_donation_report/">
                         <md-card class="cardBlogs">
                             <md-card-title-group><div><md-card-title><img src="<?= base_url(); ?>assets/images/reports.png"></md-card-title><md-card-title><h3>Reports</h3></md-card-title><md-card-title><h6>Track usage and services</h6></md-card-title></div>
                                 

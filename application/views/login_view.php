@@ -99,7 +99,7 @@ select.form-control:focus {
                                 </div>
 
                                 <div  class="col-md-12 text-right">
-                                <button type="submit" name="admin_forget_pass" id="admin_forget_pass" class="lineButton btn-block">Send OTP
+                                <button type="submit" name="admin_forget_pass" id="admin_forget_pass" class="lineButton btn-block">Send
                                 </button>
                                 </div>
                                 <div class="clearfix"></div>

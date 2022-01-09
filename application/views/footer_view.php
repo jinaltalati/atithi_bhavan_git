@@ -60,7 +60,7 @@
 				        </div>
 				    </div></a>
 
-				    <a  md-list-item="" role="listitem" routerlinkactive="active" href="<?= base_url(); ?>dashboard/accomodation"><div class="md-list-item"><div class="md-list-text"></div>
+				    <a  md-list-item="" role="listitem" routerlinkactive="active" href="<?= base_url(); ?>dashboard/room_listing"><div class="md-list-item"><div class="md-list-text"></div>
 				        <div  class="md-list-item">
 				            <div  class="md-list-text"></div>
 				            <i  class="material-icons"></i> Accommodation
@@ -69,7 +69,7 @@
 
 				    <!--template bindings={}-->
 
-				    <!--template bindings={}--><a  md-list-item="" role="listitem" routerlinkactive="active" href="<?= base_url(); ?>dashboard/report"><div class="md-list-item"><div class="md-list-text"></div>
+				    <!--template bindings={}--><a  md-list-item="" role="listitem" routerlinkactive="active" href="<?= base_url(); ?>room_donation_report"><div class="md-list-item"><div class="md-list-text"></div>
 				        <div  class="md-list-item">
 				            <div  class="md-list-text"></div>
 				            <i  class="material-icons"></i> Reports

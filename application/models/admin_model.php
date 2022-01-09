@@ -69,6 +69,8 @@ class Admin_model extends CI_Model
         // die;
         // if ($this->input->post('admin_login'))
         // {
+
+            
             $this->db->where("email", $email);
             $query = $this->db->get("admins");
 
