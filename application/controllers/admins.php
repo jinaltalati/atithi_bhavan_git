@@ -6,6 +6,7 @@ class Admins extends CI_Controller
 {
     public function __construct()
     {
+        //test
         parent::__construct();
         $this->session->set_userdata('redirect', $this->uri->uri_string());
         if (($this->session->userdata('user_id') == ""))
