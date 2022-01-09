@@ -35,3 +35,5 @@ ALTER TABLE `beneficiaries`
 
   ALTER TABLE `room`
   CHANGE COLUMN `status` `status` ENUM('Available','In Cleaning','Booked','Time Up','Maintainance') NOT NULL DEFAULT 'Available' COLLATE 'latin1_swedish_ci' AFTER `deposite`;
+
+ALTER TABLE `admins` CHANGE `role_id` `role_id` INT(11) NOT NULL DEFAULT '2' COMMENT '1- Admin , 2-Manager';

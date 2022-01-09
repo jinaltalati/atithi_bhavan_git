@@ -298,3 +298,14 @@ ERROR - 2022-01-09 10:02:44 --> Query error: Not unique table/alias: 'building'
 ERROR - 2022-01-09 10:06:01 --> Severity: Notice  --> Undefined property: stdClass::$room_name C:\xampp\htdocs\atithi_bhavan_git\application\views\reprint_receipt\list.php 65
 ERROR - 2022-01-09 10:06:01 --> Severity: Notice  --> Undefined property: stdClass::$room_name C:\xampp\htdocs\atithi_bhavan_git\application\views\reprint_receipt\list.php 65
 ERROR - 2022-01-09 10:06:01 --> Severity: Notice  --> Undefined property: stdClass::$room_name C:\xampp\htdocs\atithi_bhavan_git\application\views\reprint_receipt\list.php 65
+ERROR - 2022-01-09 11:25:01 --> Severity: Notice  --> Undefined variable: booking_data C:\xampp\htdocs\atithi_bhavan_git\application\views\room_booking_view.php 101
+ERROR - 2022-01-09 11:25:01 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\atithi_bhavan_git\application\views\room_booking_view.php 101
+ERROR - 2022-01-09 11:25:01 --> Severity: Notice  --> Undefined variable: donation_data C:\xampp\htdocs\atithi_bhavan_git\application\views\room_booking_view.php 106
+ERROR - 2022-01-09 11:25:01 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\atithi_bhavan_git\application\views\room_booking_view.php 106
+ERROR - 2022-01-09 11:28:51 --> Severity: Notice  --> Undefined offset: 0 C:\xampp\htdocs\atithi_bhavan_git\application\views\header_view.php 276
+ERROR - 2022-01-09 11:38:12 --> Severity: Notice  --> Undefined index: password C:\xampp\htdocs\atithi_bhavan_git\application\models\admin_model.php 77
+ERROR - 2022-01-09 11:38:12 --> Severity: Notice  --> Undefined index: email C:\xampp\htdocs\atithi_bhavan_git\application\models\admin_model.php 82
+ERROR - 2022-01-09 11:38:12 --> Query error: Unknown column 'forget_pwd_salt' in 'field list'
+ERROR - 2022-01-09 11:42:10 --> Severity: Notice  --> Undefined index: email C:\xampp\htdocs\atithi_bhavan_git\application\models\admin_model.php 82
+ERROR - 2022-01-09 11:44:31 --> Severity: Notice  --> Undefined index: email C:\xampp\htdocs\atithi_bhavan_git\application\models\admin_model.php 82
+ERROR - 2022-01-09 11:45:27 --> Severity: Notice  --> Undefined index: email C:\xampp\htdocs\atithi_bhavan_git\application\models\admin_model.php 82

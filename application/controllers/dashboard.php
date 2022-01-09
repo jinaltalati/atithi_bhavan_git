@@ -179,6 +179,28 @@ class Dashboard extends CI_Controller
             redirect(base_url() . 'dashboard');
         }
     }
+
+    public function forget_pass()
+    {
+        $email = $this->input->post('email');
+        
+        $result = $this->admin_model->forget_pass($email);
+
+        if ($result)
+        {
+            $message = "Password Reset sucessfully. Please check your email.";
+            $this->session->set_flashdata($this->router->class, $this->input->post('data'));
+            $this->session->set_userdata('message_success', $message);
+            redirect(base_url() . 'dashboard');
+        }
+        else
+        {
+            $message = "Email is incorrect";
+            $this->session->set_flashdata($this->router->class, $this->input->post('data'));
+            $this->session->set_userdata('message_error', $message);
+            redirect(base_url() . 'dashboard');
+        }
+    }
     
     public function forgotPassword()
     {

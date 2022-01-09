@@ -50,7 +50,7 @@ else if ($this->session->userdata('message_error'))
                     </thead>
                     <tbody>
                         <?php
-                        $arrRole = array('1'=>'Admin','2'=>'Income','3'=>'Expence','4'=>'Paper');
+                        $arrRole = array('1'=>'Admin','2'=>'Manager');
                         foreach ($userData as $key => $user)
                         {
                             ?>

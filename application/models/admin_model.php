@@ -63,6 +63,28 @@ class Admin_model extends CI_Model
         // }
     }
 
+     function forget_pass($email)
+    {
+        // pre($this->input->post());
+        // die;
+        // if ($this->input->post('admin_login'))
+        // {
+            $this->db->where("email", $email);
+            $query = $this->db->get("admins");
+
+            $salt = rand() * time();
+           // $data['salt'] = $salt;
+            $data['forgot_pwd_salt'] = md5($salt);
+
+
+            if ($query->num_rows() > 0)
+            {
+                $this->db->where("email", $email);
+                $query = $this->db->update('admins', $data);
+                return $query;
+            }
+    }
+
     function add() //$uploadData
     {
         $data = $this->input->post('data');
