@@ -47,3 +47,7 @@ ERROR - 2022-01-09 05:15:11 --> Severity: Notice  --> Undefined variable: floor_
 ERROR - 2022-01-09 05:15:11 --> Severity: Notice  --> Undefined variable: floor_id C:\xampp\htdocs\atithi_bhavan\application\controllers\booking.php 99
 ERROR - 2022-01-09 05:15:11 --> Severity: Notice  --> Undefined property: stdClass::$room_type C:\xampp\htdocs\atithi_bhavan\application\views\booking\edit.php 326
 ERROR - 2022-01-09 05:15:11 --> Severity: Notice  --> Undefined property: stdClass::$room_type C:\xampp\htdocs\atithi_bhavan\application\views\booking\edit.php 327
+ERROR - 2022-01-09 06:11:02 --> Severity: Notice  --> Undefined variable: floor_id C:\xampp\htdocs\atithi_bhavan_git\application\controllers\booking.php 96
+ERROR - 2022-01-09 06:11:02 --> Severity: Notice  --> Undefined variable: floor_id C:\xampp\htdocs\atithi_bhavan_git\application\controllers\booking.php 99
+ERROR - 2022-01-09 06:11:02 --> Severity: Notice  --> Undefined property: stdClass::$room_type C:\xampp\htdocs\atithi_bhavan_git\application\views\booking\edit.php 326
+ERROR - 2022-01-09 06:11:02 --> Severity: Notice  --> Undefined property: stdClass::$room_type C:\xampp\htdocs\atithi_bhavan_git\application\views\booking\edit.php 327

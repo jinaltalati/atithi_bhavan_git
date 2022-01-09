@@ -24,3 +24,11 @@ ALTER TABLE `beneficiaries` CHANGE `beneficiay_name` `customer_name` VARCHAR(255
 ALTER TABLE `booking` ADD `stay_period` INT(255) UNSIGNED NOT NULL AFTER `members`, ADD `pay_status` ENUM('Paid','Free') NULL DEFAULT NULL AFTER `stay_period`;
 
 ALTER TABLE `booking` ADD `beneficiary_id` INT(255) UNSIGNED NULL DEFAULT NULL AFTER `id`;
+
+==================================================================================================
+
+ALTER TABLE `booking`
+	ADD COLUMN `id_proof` VARCHAR(255) NOT NULL AFTER `mobile`;
+
+ALTER TABLE `beneficiaries`
+	ADD COLUMN `id_proof` VARCHAR(255) NOT NULL AFTER `mobile`;

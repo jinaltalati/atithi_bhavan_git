@@ -17,6 +17,7 @@ class Booking_model extends CI_Model
         $data = $this->input->post('data');
         $data['created'] = getCurrentTime();
 
+
         $this->db->where("mobile", $data['mobile']);
         $query = $this->db->get("beneficiaries");
         if ($query->num_rows == 0)
@@ -26,14 +27,26 @@ class Booking_model extends CI_Model
             $arrUser['email'] = $data['email'];
             $arrUser['mobile'] = $data['mobile'];
             $arrUser['address'] = $data['address'];
+            $arrUser['id_proof'] = $data['id_proof'];
             $arrUser['created'] = date('Y-m-d H:i:s');
             $this->db->insert('beneficiaries', $arrUser);
 
             $data['beneficiary_id'] = $this->db->insert_id();
         }
         else{
-            $row = $query->row_array();
-            $data['beneficiary_id'] = $row['id'];
+            // $row = $query->row_array();
+            // $data['beneficiary_id'] = $row['id'];
+
+                $arrUser = array();
+                $arrUser['customer_name'] = $data['customer_name'];
+                $arrUser['email'] = $data['email'];
+                $arrUser['mobile'] = $data['mobile'];
+                $arrUser['address'] = $data['address'];
+                $arrUser['id_proof'] = $data['id_proof'];
+                $arrUser['created'] = date('Y-m-d H:i:s');
+
+                $this->db->where('mobile', $data['mobile']);
+                $this->db->update('beneficiaries', $arrUser);
         }
         // $this->db->where("mobile", $data['mobile']);
         // $query = $this->db->get("booking");

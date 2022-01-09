@@ -156,7 +156,7 @@
          
             <!--template bindings={}-->
             <!--template bindings={}--><div>
-                <button class="btn-custom user-profile-action-layout top-user-character" id="profile_menu" disableripple="" md-button="" tooltip="Profile" style="touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="md-button-wrapper">N</span><!--template bindings={}--><div class="md-button-focus-overlay"></div></button>
+                <button class="btn-custom user-profile-action-layout top-user-character" id="profile_menu" disableripple="" md-button="" tooltip="Profile" style="touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="md-button-wrapper"><?= $this->session->userdata('code'); ?></span><!--template bindings={}--><div class="md-button-focus-overlay"></div></button>
 
 
             </div>

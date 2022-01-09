@@ -165,21 +165,7 @@
                                     <!-- </div> -->
                                 </div>    
                             </div>
-
-                            <div class="span4">
-                                <div class="control-group">
-                                    <label for="charge" class="control-label">Donate Deposite?<span class="danger">*</span></label>
-                                    <!-- <div class="controls"> -->
-                                        <select id="donate_deposite" name="data[donate_deposite]" class="form-control">
-                                            <option class="no">No</option>
-                                            <option class="yes">Yes</option>
-                                        </select>
-                                    <!-- </div> -->
-                                </div>    
-                            </div>
-                        </div>
-                         <div class="row-fluid">
-                            <div class="span4">
+                             <div class="span4">
                                 <div class="control-group">
                                     <label for="charge" class="control-label">Room Charge<span class="danger">*</span></label>
                                     <!-- <div class="controls"> -->
@@ -187,6 +173,21 @@
                                     <!-- </div> -->
                                 </div>    
                             </div>
+
+                           <!--  <div class="span4">
+                                <div class="control-group">
+                                    <label for="charge" class="control-label">Donate Deposite?<span class="danger">*</span></label>
+                                   
+                                        <select id="donate_deposite" name="data[donate_deposite]" class="form-control">
+                                            <option class="no">No</option>
+                                            <option class="yes">Yes</option>
+                                        </select>
+                                  
+                                </div>    
+                            </div> -->
+                        </div>
+                         <div class="row-fluid">
+                           
                             <div class="span4">
                                 <div class="control-group">
                                     <label for="deposite" class="control-label">Room Deposite<span class="danger">*</span></label>
@@ -207,12 +208,8 @@
                                     <!-- </div> -->
                                 </div> 
                             </div>
-                           
-                        </div>
 
-
-                        <div class="row-fluid">
-                             <div class="span4">
+                            <div class="span4">
                                 
                                 <div class="control-group">
                                     <label for="payment_mode" class="control-label">Payment Mode<span class="danger">*</span></label>
@@ -223,6 +220,26 @@
                                     <!-- </div> -->
                                 </div> 
  
+                            </div>
+                           
+                        </div>
+
+
+                        <div class="row-fluid">
+                             
+                            <div class="span4">
+                                <div class="control-group">
+                                    <label for="id_proof" class="control-label">ID Proof</label>
+                                    <!-- <div class="controls"> -->
+                                         <select name="data[id_proof]" id="id_proof" class='form-control'  data-rule-required="true" placeholder="Payment Mode" value="<?php echo (isset($data['id_proof']))?$data['id_proof']:'';?>">
+                                            <option value="adhar_card">Adhar Card</option>
+                                            <option value="driving_licence">Driving Licence</option>
+                                            <option value="election_card">Election Card</option>
+                                            <option value="pan_card">Pan Card</option>
+                                            <option value="passport">Passport</option>
+                                        </select>
+                                    <!-- </div> -->
+                                </div> 
                             </div>
                             <div class="span4">
                                 <div class="control-group">
